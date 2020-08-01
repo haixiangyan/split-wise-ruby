@@ -1513,3 +1513,256 @@ Processing by UsersController#create as HTML
 Completed 400 Bad Request in 19ms (Views: 0.2ms | ActiveRecord: 30.8ms | Allocations: 4228)
 
 
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:42:07 +0800
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 23ms (Views: 0.8ms | ActiveRecord: 29.9ms | Allocations: 5878)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:46:45 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 539ms (Views: 0.1ms | ActiveRecord: 20.3ms | Allocations: 4755)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:47:21 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1194)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:47:36 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 14ms (Views: 0.2ms | ActiveRecord: 22.8ms | Allocations: 5046)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:48:48 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"123@qq.com"}}
+Completed 400 Bad Request in 206ms (Views: 0.1ms | ActiveRecord: 18.9ms | Allocations: 4470)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:49:21 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"123@qq.com"}}
+Completed 400 Bad Request in 208ms (Views: 0.2ms | ActiveRecord: 21.2ms | Allocations: 4293)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:51:33 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"123@qq.com"}}
+Completed 400 Bad Request in 202ms (Views: 0.1ms | ActiveRecord: 22.3ms | Allocations: 3306)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:54:25 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"123@qq.com"}}
+Completed 400 Bad Request in 201ms (Views: 0.1ms | ActiveRecord: 19.9ms | Allocations: 3320)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:54:53 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"123@qq.com"}}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "123@qq.com"], ["password_digest", "$2a$12$4DsJFRnrywbMEVHIXPrxn.8qHW/Y9w1u.FfDdu1wkM5a7rfMimO3a"], ["created_at", "2020-08-01 15:54:53.563687"], ["updated_at", "2020-08-01 15:54:53.563687"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 200 OK in 215ms (Views: 0.2ms | ActiveRecord: 31.0ms | Allocations: 5103)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:56:37 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"13@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"13@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "13@qq.com"], ["password_digest", "$2a$12$.kJf54NdfjKH0hWDPc/GZ.Xm6rLbJJuFiJ1RBccIIWDTNJFZkdBTW"], ["created_at", "2020-08-01 15:56:37.303961"], ["updated_at", "2020-08-01 15:56:37.303961"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 215ms (Views: 0.2ms | ActiveRecord: 29.3ms | Allocations: 5060)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:57:43 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"14@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"14@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "14@qq.com"], ["password_digest", "$2a$12$avOXAW4tzw2YIsDSHiaK1.phHKD9LlkDMw7Kd4/2p9al9PYumCLb6"], ["created_at", "2020-08-01 15:57:43.654751"], ["updated_at", "2020-08-01 15:57:43.654751"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 200 OK in 220ms (Views: 0.2ms | ActiveRecord: 29.1ms | Allocations: 5090)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:02:23 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"14@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"14@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "14@qq.com"], ["password_digest", "$2a$12$DsjuX1KCOsDyBe1nOMkcqObe7Iu2EpnZm5zqu9M9O9kmhDrQIOUA2"], ["created_at", "2020-08-01 16:02:23.813189"], ["updated_at", "2020-08-01 16:02:23.813189"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 26.8ms | Allocations: 57537)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007f9c791a5c08>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:02:31 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"15@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"15@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "15@qq.com"], ["password_digest", "$2a$12$ERJua2UAJigIt1Z6Pw7QV.en//s8WA/ew4T7vFhI1Mn/4WMIYAgpq"], ["created_at", "2020-08-01 16:02:32.089019"], ["updated_at", "2020-08-01 16:02:32.089019"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 4.8ms | Allocations: 55098)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007f9c7a8f0bd8>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:04:04 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"15@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"15@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "15@qq.com"], ["password_digest", "$2a$12$fuPZvj/1PIDl.iEbXiCi1uGh8tR55DHiBaALx6DjwSQaYsZO97cyK"], ["created_at", "2020-08-01 16:04:04.493979"], ["updated_at", "2020-08-01 16:04:04.493979"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 4.3ms | Allocations: 55042)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007f9c76782d68>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:04:13 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"15@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"15@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "15@qq.com"], ["password_digest", "$2a$12$8ZIw3DCLh5g7dTZlKk1pc.zAnpzd4h97Ldo85j0ziF7WM8Y3GUks2"], ["created_at", "2020-08-01 16:04:13.726646"], ["updated_at", "2020-08-01 16:04:13.726646"]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5:in `create'
+Completed 500 Internal Server Error in 261ms (ActiveRecord: 32.4ms | Allocations: 61804)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007f9c7e24efd8>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:04:58 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"15@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"15@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "15@qq.com"], ["password_digest", "$2a$12$njlpywaNPiaounhOiJVsouoaub91ULdGYjnXEmvrDgoKdKHNbmfZS"], ["created_at", "2020-08-01 16:04:58.607433"], ["updated_at", "2020-08-01 16:04:58.607433"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 30.0ms | Allocations: 57550)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007f9c79125648>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:05:06 +0800
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"15@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"15@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (5.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "15@qq.com"], ["password_digest", "$2a$12$GGQySfuOv8ZGhCJYHP4O/ue6PppiZ1k2AdIaAoS2qQkwcmaLhE8Xe"], ["created_at", "2020-08-01 16:05:06.543739"], ["updated_at", "2020-08-01 16:05:06.543739"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 291ms (ActiveRecord: 35.2ms | Allocations: 57978)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007fb8248efba0>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:06:53 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"19@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"19@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "19@qq.com"], ["password_digest", "$2a$12$nZL0o9p2/9UheLjus764OuOc8WmQXSu.bxbW2Xd7fYrKY1GMOZp/S"], ["created_at", "2020-08-01 16:06:53.919888"], ["updated_at", "2020-08-01 16:06:53.919888"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 4.7ms | Allocations: 55114)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007fb82a82c910>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:08:10 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"19@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"19@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "19@qq.com"], ["password_digest", "$2a$12$tV89Id8UEU/SP1WPF95TV.3s9fqX0yx3anKrVLHa7XIgVlvven0A6"], ["created_at", "2020-08-01 16:08:11.121111"], ["updated_at", "2020-08-01 16:08:11.121111"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 4.6ms | Allocations: 59327)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007fb82607de20>
+Did you mean?  super):
+  
+app/controllers/application_controller.rb:3:in `render_resources'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 00:08:38 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"20@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"20@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "20@qq.com"], ["password_digest", "$2a$12$exhxtlTycvh2ptjapdcaD.VsIEhwm09jdHBEOh7s8zTZmOiBijSy6"], ["created_at", "2020-08-01 16:08:39.138308"], ["updated_at", "2020-08-01 16:08:39.138308"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+Completed 200 OK in 211ms (Views: 0.3ms | ActiveRecord: 30.4ms | Allocations: 5268)
+
+
