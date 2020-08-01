@@ -1396,3 +1396,120 @@ Processing by UsersController#create as HTML
 Completed 204 No Content in 221ms (ActiveRecord: 41.7ms | Allocations: 5188)
 
 
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:20:14 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"3@qq.com", "password"=>"[FILTERED]", "user"=>{"email"=>"3@qq.com"}}
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (5.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "3@qq.com"], ["password_digest", "$2a$12$aENs057bkyZtK11VOdROAufuT.K9nKuGnzdZKPHreGYnBaqIzGpsK"], ["created_at", "2020-08-01 15:20:14.791726"], ["updated_at", "2020-08-01 15:20:14.791726"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 204 No Content in 204ms (ActiveRecord: 10.1ms | Allocations: 2495)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:20:31 +0800
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"3@qq.com", "password"=>"[FILTERED]", "user"=>{"email"=>"3@qq.com"}}
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "3@qq.com"], ["password_digest", "$2a$12$ADV7kHgYZieW2dl5e8MY2uCLT9/D4zr3OYcft.HR3MZHW3x4Lcr1e"], ["created_at", "2020-08-01 15:20:31.973055"], ["updated_at", "2020-08-01 15:20:31.973055"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 204 No Content in 200ms (ActiveRecord: 28.7ms | Allocations: 2606)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:23:32 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"3@qq.com", "password"=>"[FILTERED]", "user"=>{"email"=>"3@qq.com"}}
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "3@qq.com"], ["password_digest", "$2a$12$r2AQW2CXTrhmq5LBN9gzvePS3pvu4ABdb2w5EcaSi4j7oOpEFhix2"], ["created_at", "2020-08-01 15:23:32.312292"], ["updated_at", "2020-08-01 15:23:32.312292"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 28.1ms | Allocations: 3855)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/Users/home/workspace/split-wise-ruby/app/views"
+  * "/Users/home/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.2/app/views"
+):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:24:09 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"3@qq.com", "password"=>"[FILTERED]", "user"=>{"email"=>"3@qq.com"}}
+Completed 500 Internal Server Error in 205ms (ActiveRecord: 25.1ms | Allocations: 3469)
+
+
+  
+ActionView::MissingTemplate (Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/Users/home/workspace/split-wise-ruby/app/views"
+  * "/Users/home/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.2/app/views"
+):
+  
+app/controllers/users_controller.rb:12:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:26:12 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"3@qq.com", "password"=>"[FILTERED]", "user"=>{"email"=>"3@qq.com"}}
+Completed 400 Bad Request in 208ms (Views: 0.2ms | ActiveRecord: 24.7ms | Allocations: 3109)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:26:53 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"3@qq.com", "password"=>"[FILTERED]", "user"=>{"email"=>"3@qq.com"}}
+Completed 400 Bad Request in 207ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 632)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:29:10 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"3@qq.com", "password"=>"[FILTERED]", "user"=>{"email"=>"3@qq.com"}}
+Completed 400 Bad Request in 205ms (Views: 0.1ms | ActiveRecord: 26.4ms | Allocations: 3092)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:29:39 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1771)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:31:14 +0800
+  
+ArgumentError (Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.):
+  
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:32:07 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 14ms (Views: 0.2ms | ActiveRecord: 23.3ms | Allocations: 6098)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:33:03 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 12ms (Views: 0.2ms | ActiveRecord: 22.0ms | Allocations: 4491)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:33:21 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2014)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:34:17 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 12ms (Views: 0.1ms | ActiveRecord: 21.1ms | Allocations: 4539)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-01 23:35:24 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 19ms (Views: 0.2ms | ActiveRecord: 30.8ms | Allocations: 4228)
+
+
