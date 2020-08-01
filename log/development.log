@@ -1,0 +1,1338 @@
+Started GET "/" for ::1 at 2020-08-01 15:43:34 +0800
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sw.js" for ::1 at 2020-08-01 15:43:36 +0800
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 15:44:23 +0800
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sw.js" for ::1 at 2020-08-01 15:44:25 +0800
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 16:54:53 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-08-01 16:54:53 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sw.js" for ::1 at 2020-08-01 16:54:55 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 16:55:44 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-08-01 16:55:44 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sw.js" for ::1 at 2020-08-01 16:55:46 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 16:55:50 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-08-01 16:55:51 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 16:55:51 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-08-01 16:55:52 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sw.js" for ::1 at 2020-08-01 16:55:53 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "split_wise_ruby_development" does not exist
+):
+  
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.2) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 16:57:00 +0800
+Processing by FirstController#hello as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 123)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-08-01 16:57:01 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sw.js" for ::1 at 2020-08-01 16:57:03 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE "split_wise_ruby_development" ENCODING = 'unicode'[0m
+  [1m[35m (1699.2ms)[0m  [1m[35mCREATE DATABASE "split_wise_ruby_test" ENCODING = 'unicode'[0m
+Started GET "/hello" for ::1 at 2020-08-01 17:01:36 +0800
+Processing by FirstController#hello as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 128)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:01:39 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:01:42 +0800
+Processing by FirstController#hello as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 76)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:01:44 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-08-01 17:02:03 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/home/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/home/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 295)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 1685)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:02:05 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-08-01 17:09:59 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/home/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/home/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.5ms | Allocations: 179)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 868)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:10:01 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:10:03 +0800
+Processing by FirstController#hello as HTML
+Completed 500 Internal Server Error in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 158)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/first_controller.rb:4:in `hello'
+Started GET "/sw.js" for ::1 at 2020-08-01 17:10:05 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:10:26 +0800
+Processing by FirstController#hello as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 122)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:10:27 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:13:13 +0800
+Processing by FirstController#hello as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 72)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:13:15 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:14:12 +0800
+Processing by FirstController#hello as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 584)
+
+
+  
+ActionView::MissingTemplate (Missing template first/hello with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/Users/home/workspace/split-wise-ruby/app/views"
+  * "/Users/home/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.2/app/views"
+):
+  
+app/controllers/first_controller.rb:5:in `hello'
+Started GET "/sw.js" for ::1 at 2020-08-01 17:14:14 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:14:37 +0800
+Processing by FirstController#hello as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 539)
+
+
+  
+ActionView::MissingTemplate (Missing template layout/first/hello with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/Users/home/workspace/split-wise-ruby/app/views"
+  * "/Users/home/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.2/app/views"
+):
+  
+app/controllers/first_controller.rb:5:in `hello'
+Started GET "/sw.js" for ::1 at 2020-08-01 17:14:39 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:15:21 +0800
+Processing by FirstController#hello as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 367)
+
+
+  
+ActionView::MissingTemplate (Missing template first/hello with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}. Searched in:
+  * "/Users/home/workspace/split-wise-ruby/app/views"
+  * "/Users/home/.rvm/gems/ruby-2.7.0/gems/actiontext-6.0.3.2/app/views"
+):
+  
+app/controllers/first_controller.rb:5:in `hello'
+Started GET "/sw.js" for ::1 at 2020-08-01 17:15:23 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:15:51 +0800
+Processing by FirstController#hello as HTML
+  Rendering first/hello.html
+  Rendered first/hello.html (Duration: 1.1ms | Allocations: 63)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 943)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:15:53 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:17:20 +0800
+Processing by FirstController#hello as HTML
+  Rendering first/hello.html
+  Rendered first/hello.html (Duration: 0.3ms | Allocations: 63)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 960)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:17:22 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hi" for ::1 at 2020-08-01 17:17:26 +0800
+Processing by FirstController#hi as HTML
+  Rendering first/hi.html
+  Rendered first/hi.html (Duration: 0.2ms | Allocations: 62)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 402)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:17:28 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hi" for ::1 at 2020-08-01 17:21:09 +0800
+Processing by FirstController#hi as HTML
+  Rendering first/hi.html within layouts/application
+  Rendered first/hi.html within layouts/application (Duration: 0.2ms | Allocations: 64)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1011)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:21:11 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hi" for ::1 at 2020-08-01 17:21:20 +0800
+Processing by FirstController#hi as HTML
+  Rendering first/hi.html within layouts/application
+  Rendered first/hi.html within layouts/application (Duration: 0.2ms | Allocations: 62)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1000)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:21:21 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:21:23 +0800
+Processing by FirstController#hello as HTML
+  Rendering first/hello.html within layouts/application
+  Rendered first/hello.html within layouts/application (Duration: 0.2ms | Allocations: 64)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:21:25 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:28:26 +0800
+Processing by FirstController#hello as HTML
+  Rendering first/hello.html.erb within layouts/application
+  Rendered first/hello.html.erb within layouts/application (Duration: 0.4ms | Allocations: 126)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1104)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:28:28 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/hello" for ::1 at 2020-08-01 17:32:20 +0800
+Processing by FirstController#hello as HTML
+  Rendering first/hello.html.erb within layouts/application
+  Rendered first/hello.html.erb within layouts/application (Duration: 0.4ms | Allocations: 166)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1144)
+
+
+Started GET "/sw.js" for ::1 at 2020-08-01 17:32:22 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/sw.js"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

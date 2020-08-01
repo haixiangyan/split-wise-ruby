@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: Jack
+  password: 123456
+  host: localhost
+  port: 5001
+
+development:
+  <<: *default
+  database: split_wise_ruby_development
+test:
+  <<: *default
+  database: split_wise_ruby_test
+production:
+  <<: *default
+  database: split_wise_ruby_production
+  username: split_wise_ruby
+  password: <%= ENV['SPLIT_WISE_RUBY_DATABASE_PASSWORD'] %>
