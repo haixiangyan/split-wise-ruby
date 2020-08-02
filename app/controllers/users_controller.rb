@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   def create
-    render_resources User.create create_params
+    user = User.create create_params
+
+    render_resources user
+
+    UserMailer.welcome_email(user).deliver_now
   end
 
   def create_params
