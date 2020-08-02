@@ -7,6 +7,7 @@ zh-CN:
             email:
               blank: 邮箱不能为空
               invalid: 邮箱必须含有 @ 字符
+              taken: 该邮箱已被使用
             password:
               blank: 密码不能为空
               too_short: 密码不能少于 6 个字符
