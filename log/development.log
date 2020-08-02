@@ -1766,3 +1766,310 @@ Processing by UsersController#create as HTML
 Completed 200 OK in 211ms (Views: 0.3ms | ActiveRecord: 30.4ms | Allocations: 5268)
 
 
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:38:56 +0800
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"haixiang6123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"haixiang6123@gmail.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "haixiang6123@gmail.com"], ["password_digest", "$2a$12$kh2.NYpKJWvzDHt1lEtZyeMAyl3a/CGEt2llEdKfDR.qoZrAXoph6"], ["created_at", "2020-08-02 02:38:56.954449"], ["updated_at", "2020-08-02 02:38:56.954449"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+UserMailer#welcome_email: processed outbound mail in 2.0ms
+Completed 500 Internal Server Error in 413ms (Views: 0.4ms | ActiveRecord: 35.2ms | Allocations: 56735)
+
+
+  
+ActionView::MissingTemplate (Missing template user_mailer/welcome_email with "mailer". Searched in:
+  * "user_mailer"
+):
+  
+app/mailers/user_mailer.rb:6:in `welcome_email'
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:40:24 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"haixiang6123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"haixiang6123@gmail.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "haixiang6123@gmail.com"], ["password_digest", "$2a$12$m/WpmxBvQJpOH8b7/N1DBOc1vPS0JacdqD/9agdGO6P8erpgckaju"], ["created_at", "2020-08-02 02:40:24.275129"], ["updated_at", "2020-08-02 02:40:24.275129"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.3ms | Allocations: 101)
+UserMailer#welcome_email: processed outbound mail in 412.6ms
+Delivered mail 5f262798aaac0_1796933f43878@HAIXIANGYAN-MB1.mail (305.2ms)
+Date: Sun, 02 Aug 2020 10:40:24 +0800
+From: haixiangad@gmail.com
+To: haixiang6123@gmail.com
+Message-ID: <5f262798aaac0_1796933f43878@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBoYWl4aWFuZzYx
+MjNAZ21haWwuY29tIOS9oOWlve+8jA0KPC9wPg0KPHA+DQogIOasoui/juad
+peWIsOaIkeeahOe9keerme+8jOivt+iusOS4gOeslOi0puWQpw0KPC9wPg0K
+ICA8L2JvZHk+DQo8L2h0bWw+DQo=
+
+Completed 500 Internal Server Error in 922ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 67275)
+
+
+  
+EOFError (end of file reached):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:43:43 +0800
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"haixiang6123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"haixiang6123@gmail.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (6.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "haixiang6123@gmail.com"], ["password_digest", "$2a$12$5ZFqKK1SiydD180eex4UNuwMF4kmOA8wH8j4/5TWXrCfKbG5j/aB6"], ["created_at", "2020-08-02 02:43:43.475961"], ["updated_at", "2020-08-02 02:43:43.475961"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.6ms | Allocations: 215)
+UserMailer#welcome_email: processed outbound mail in 14.5ms
+Delivered mail 5f26285f8610f_17d802670472d5@HAIXIANGYAN-MB1.mail (248.1ms)
+Date: Sun, 02 Aug 2020 10:43:43 +0800
+From: haixiangad@gmail.com
+To: haixiang6123@gmail.com
+Message-ID: <5f26285f8610f_17d802670472d5@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBoYWl4aWFuZzYx
+MjNAZ21haWwuY29tIOS9oOWlve+8jA0KPC9wPg0KPHA+DQogIOasoui/juad
+peWIsOaIkeeahOe9keerme+8jOivt+iusOS4gOeslOi0puWQpw0KPC9wPg0K
+ICA8L2JvZHk+DQo8L2h0bWw+DQo=
+
+Completed 500 Internal Server Error in 537ms (Views: 0.3ms | ActiveRecord: 56.7ms | Allocations: 37301)
+
+
+  
+EOFError (end of file reached):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:44:50 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"haixiang6123@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"haixiang6123@gmail.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "haixiang6123@gmail.com"], ["password_digest", "$2a$12$m5VYbyQcSlVdncWv.7T2ru1Me2umAapT9Sbp8vFZIyZte3MCQUFIC"], ["created_at", "2020-08-02 02:44:50.558671"], ["updated_at", "2020-08-02 02:44:50.558671"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+UserMailer#welcome_email: processed outbound mail in 0.7ms
+Delivered mail 5f2628a28a905_17d803444473cc@HAIXIANGYAN-MB1.mail (160.8ms)
+Date: Sun, 02 Aug 2020 10:44:50 +0800
+From: haixiangad@gmail.com
+To: haixiang6123@gmail.com
+Message-ID: <5f2628a28a905_17d803444473cc@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBoYWl4aWFuZzYx
+MjNAZ21haWwuY29tIOS9oOWlve+8jA0KPC9wPg0KPHA+DQogIOasoui/juad
+peWIsOaIkeeahOe9keerme+8jOivt+iusOS4gOeslOi0puWQpw0KPC9wPg0K
+ICA8L2JvZHk+DQo8L2h0bWw+DQo=
+
+Completed 500 Internal Server Error in 362ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 9783)
+
+
+  
+EOFError (end of file reached):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:47:53 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"yan6123@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 14.9ms | Allocations: 27192)
+
+
+  
+NoMethodError (undefined method `put' for #<UsersController:0x00007ffdd0180a80>
+Did you mean?  puts
+               putc):
+  
+app/controllers/users_controller.rb:12:in `create_params'
+app/controllers/users_controller.rb:3:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:48:33 +0800
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"yan6123@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "yan6123@qq.com"], ["password_digest", "$2a$12$vrnF/7hqAStZommxArcihuoEoTN3Ex4t81Sdchlq8LDSIh1ta9QOK"], ["created_at", "2020-08-02 02:48:34.129988"], ["updated_at", "2020-08-02 02:48:34.129988"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.9ms | Allocations: 215)
+UserMailer#welcome_email: processed outbound mail in 22.7ms
+Delivered mail 5f26298237f20_1826b2670805d8@HAIXIANGYAN-MB1.mail (206.4ms)
+Date: Sun, 02 Aug 2020 10:48:34 +0800
+From: haixiangad@gmail.com
+To: yan6123@qq.com
+Message-ID: <5f26298237f20_1826b2670805d8@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICB5YW42MTIzQHFx
+LmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47mnaXliLDmiJHn
+moTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4NCiAgPC9ib2R5
+Pg0KPC9odG1sPg0K
+
+Completed 500 Internal Server Error in 514ms (Views: 0.3ms | ActiveRecord: 37.0ms | Allocations: 37270)
+
+
+  
+EOFError (end of file reached):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:49:41 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"yan6123@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "yan6123@qq.com"], ["password_digest", "$2a$12$5KA7yBEPEesHRasae2t5r.V2O8ZCK/T/T8hpzdNRiiFGRXhzX9Wh2"], ["created_at", "2020-08-02 02:49:41.586077"], ["updated_at", "2020-08-02 02:49:41.586077"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+UserMailer#welcome_email: processed outbound mail in 0.9ms
+Delivered mail 5f2629c5926dc_1826b344480648@HAIXIANGYAN-MB1.mail (580.7ms)
+Date: Sun, 02 Aug 2020 10:49:41 +0800
+From: yan6123@qq.com
+To: yan6123@qq.com
+Message-ID: <5f2629c5926dc_1826b344480648@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICB5YW42MTIzQHFx
+LmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47mnaXliLDmiJHn
+moTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4NCiAgPC9ib2R5
+Pg0KPC9odG1sPg0K
+
+Completed 200 OK in 823ms (Views: 0.3ms | ActiveRecord: 29.4ms | Allocations: 9343)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:52:23 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"yan6123@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "yan6123@qq.com"], ["password_digest", "$2a$12$Zbzk5CD78ETWFQ7lth5nL.iOapBA4iCSWMu69zrUna1vx3wTaZuWq"], ["created_at", "2020-08-02 02:52:23.967288"], ["updated_at", "2020-08-02 02:52:23.967288"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 6)
+UserMailer#welcome_email: processed outbound mail in 0.9ms
+Delivered mail 5f262a67efa8e_1826b3cdc807b9@HAIXIANGYAN-MB1.mail (550.1ms)
+Date: Sun, 02 Aug 2020 10:52:23 +0800
+From: yan6123@qq.com
+To: yan6123@qq.com
+Message-ID: <5f262a67efa8e_1826b3cdc807b9@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICB5YW42MTIzQHFx
+LmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47mnaXliLDmiJHn
+moTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4NCiAgPC9ib2R5
+Pg0KPC9odG1sPg0K
+
+Completed 200 OK in 779ms (Views: 0.3ms | ActiveRecord: 30.0ms | Allocations: 9196)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-02 10:52:44 +0800
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"yan6123@qq.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[36mUser Create (5.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "yan6123@qq.com"], ["password_digest", "$2a$12$AvcPfqSxgsEc3iWDBUIAHeMCsILB3IEI9LjoYhWjgGDAgb/ZaSCnq"], ["created_at", "2020-08-02 02:52:44.782529"], ["updated_at", "2020-08-02 02:52:44.782529"]]
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:3:in `create'
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 1.4ms | Allocations: 215)
+UserMailer#welcome_email: processed outbound mail in 28.4ms
+Delivered mail 5f262a7cdcb5f_225267066482@HAIXIANGYAN-MB1.mail (508.5ms)
+Date: Sun, 02 Aug 2020 10:52:44 +0800
+From: yan6123@qq.com
+To: yan6123@qq.com
+Message-ID: <5f262a7cdcb5f_225267066482@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICB5YW42MTIzQHFx
+LmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47mnaXliLDmiJHn
+moTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4NCiAgPC9ib2R5
+Pg0KPC9odG1sPg0K
+
+Completed 200 OK in 834ms (Views: 0.4ms | ActiveRecord: 36.4ms | Allocations: 37482)
+
+

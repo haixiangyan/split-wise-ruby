@@ -3,6 +3,6 @@ class UserMailer < ApplicationMailer
     @user = user
     @url = 'https://www.baidu.com'
 
-    mail to: @user.email, subject: '欢迎来到 Split Wise'
+    mail(to: @user.email, subject: '欢迎来到 Split Wise')
   end
 end
