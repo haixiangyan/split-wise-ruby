@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/hi', to: 'first#hi'
 
   resources :users
+  resources :sessions, only: [:create, :destroy]
 end
