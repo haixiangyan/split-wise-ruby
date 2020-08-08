@@ -5,6 +5,8 @@ class SessionsController < ApplicationController
     session.validate
 
     render_resources session
+
+    # session[:current_user_id] = session.user.id
   end
 
   def destroy
