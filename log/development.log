@@ -2613,3 +2613,57 @@ Processing by SessionsController#create as HTML
 Completed 200 OK in 229ms (Views: 0.4ms | ActiveRecord: 29.9ms | Allocations: 5506)
 
 
+Started GET "/me" for 127.0.0.1 at 2020-08-08 10:07:48 +0800
+Processing by UsersController#me as JSON
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `me'
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 23.5ms | Allocations: 4399)
+
+
+Started GET "/me" for 127.0.0.1 at 2020-08-08 10:17:18 +0800
+Processing by UsersController#me as JSON
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:3:in `current_user'
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 7.2ms | Allocations: 4392)
+
+
+Started DELETE "/me" for 127.0.0.1 at 2020-08-08 10:33:04 +0800
+  
+ActionController::RoutingError (No route matches [DELETE] "/me"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started DELETE "/sessions" for 127.0.0.1 at 2020-08-08 10:34:05 +0800
+Processing by SessionsController#destroy as JSON
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started DELETE "/sessions" for 127.0.0.1 at 2020-08-08 10:37:09 +0800
+Processing by SessionsController#destroy as JSON
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 53484)
+
+
+  
+NameError (undefined local variable or method `cookies' for #<SessionsController:0x00007fc9f2dce5d8>):
+  
+app/controllers/sessions_controller.rb:14:in `destroy'
