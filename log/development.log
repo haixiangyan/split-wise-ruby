@@ -2559,3 +2559,57 @@ Processing by SessionsController#create as HTML
 Completed 400 Bad Request in 213ms (Views: 0.1ms | ActiveRecord: 5.3ms | Allocations: 1687)
 
 
+Started POST "/sessions" for 127.0.0.1 at 2020-08-08 09:46:59 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "session"=>{"email"=>"yan6123@qq.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yan6123@qq.com"], ["LIMIT", 1]]
+  ↳ app/models/session.rb:15:in `check_email'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yan6123@qq.com"], ["LIMIT", 1]]
+  ↳ app/models/session.rb:23:in `email_password_match'
+Completed 200 OK in 224ms (Views: 0.2ms | ActiveRecord: 21.8ms | Allocations: 5009)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2020-08-08 09:47:29 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "session"=>{"email"=>"yan6123@qq.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yan6123@qq.com"], ["LIMIT", 1]]
+  ↳ app/models/session.rb:15:in `check_email'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yan6123@qq.com"], ["LIMIT", 1]]
+  ↳ app/models/session.rb:23:in `email_password_match'
+Completed 500 Internal Server Error in 228ms (Views: 0.1ms | ActiveRecord: 24.8ms | Allocations: 5570)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2020-08-08 09:51:11 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "session"=>{"email"=>"yan6123@qq.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yan6123@qq.com"], ["LIMIT", 1]]
+  ↳ app/models/session.rb:15:in `check_email'
+Completed 200 OK in 229ms (Views: 0.4ms | ActiveRecord: 28.3ms | Allocations: 4643)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2020-08-08 09:55:20 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "session"=>{"email"=>"yan6123@qq.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yan6123@qq.com"], ["LIMIT", 1]]
+  ↳ app/models/session.rb:15:in `check_email'
+Completed 200 OK in 227ms (Views: 0.3ms | ActiveRecord: 26.4ms | Allocations: 4620)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2020-08-08 10:04:13 +0800
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"yan6123@qq.com", "password"=>"[FILTERED]", "session"=>{"email"=>"yan6123@qq.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session[0m
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yan6123@qq.com"], ["LIMIT", 1]]
+  ↳ app/models/session.rb:15:in `check_email'
+Completed 200 OK in 229ms (Views: 0.4ms | ActiveRecord: 29.9ms | Allocations: 5506)
+
+
