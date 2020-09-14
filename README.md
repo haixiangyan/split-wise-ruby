@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 数据库迁移
 
-Things you may want to cover:
+```bash
+bin/rails db:migrate
+```
 
-* Ruby version
+## 运行
 
-* System dependencies
+```bash
+bin/rails s
+```
 
-* Configuration
+## 自动生成文档
 
-* Database creation
+```bash
+bin/rake docs:generate
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+open doc/api/index.html
+```
