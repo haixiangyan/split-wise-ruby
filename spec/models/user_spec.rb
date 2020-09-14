@@ -22,4 +22,9 @@ RSpec.describe User, type: :model do
     expect(UserMailer).to have_received(:welcome_email)
     expect(mailer).to have_received(:deliver_later)
   end
+  it '邮箱为空字符串则只提示邮箱为空' do
+    user = User.create email: ''
+    expect(user.errors.details[:email].length).to eq 1
+    expect(user.errors.details[:email][0][:email]).to eq nil
+  end
 end
