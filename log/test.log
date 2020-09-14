@@ -905,3 +905,21 @@ Processing by UsersController#me as HTML
   [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
 Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 623)
   [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (5.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "1@qq.com"], ["password_digest", "$2a$04$lhMKVMKqgGJ8UtXko5X9bO6RX6XP540ohUSn7Yzr7NUiq00cc6oje"], ["created_at", "2020-09-14 16:28:56.761585"], ["updated_at", "2020-09-14 16:28:56.761585"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 74462e2d-5f55-4346-8004-f1cb793e97a3) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbaa2a61b20 @uri=#<URI::GID gid://split-wise-ruby/User/57>>]}
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-15 00:28:56 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"1@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 1674)
+Started GET "/me" for 127.0.0.1 at 2020-09-15 00:28:56 +0800
+Processing by UsersController#me as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 621)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
