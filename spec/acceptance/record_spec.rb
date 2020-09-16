@@ -7,6 +7,7 @@ resource "Records" do
     parameter :category, '类型: 1 outgoings | 2 income', type: :string, required: true
     parameter :note, '备注', type: :string
     example "创建记账" do
+      sign_in
       do_request(amount: 10000, category: 'income', note: '吃饭')
       expect(status).to eq 200
     end

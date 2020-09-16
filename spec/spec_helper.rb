@@ -1,7 +1,12 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'rspec_api_documentation'
+require 'api_documentation_helper'
+
 module SpecTestHelper
-  def sign_in(email, password)
-    post '/sessions', params: {email: email, password: password}
+  def sign_in(user = nil)
+    user ||= User.create!(email: 'spec_test_helper@qq.com', password: '123456', password_confirmation: '123456')
+    post '/sessions', params: {email: user.email, password: user.password}
+    user
   end
 end
 

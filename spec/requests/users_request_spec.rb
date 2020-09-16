@@ -14,8 +14,7 @@ RSpec.describe "Users", type: :request do
     expect(response).to have_http_status :not_found
   end
   it 'should get current user' do
-    user = User.create! email: '1@qq.com', password: '123456', password_confirmation: '123456'
-    sign_in user.email, '123456'
+    user = sign_in
     get '/me'
 
     body = JSON.parse(response.body)

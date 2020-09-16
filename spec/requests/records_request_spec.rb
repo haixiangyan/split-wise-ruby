@@ -6,6 +6,7 @@ RSpec.describe "Records", type: :request do
     expect(response.status).to eq 401
   end
   it 'should create a record' do
+    sign_in
     post '/records', params: {amount: 10000, category: 'outgoings', note: '请客'}
     expect(response.status).to eq 200
 
@@ -14,6 +15,7 @@ RSpec.describe "Records", type: :request do
     expect(body["resources"]["id"]).to be
   end
   it 'should not create a record' do
+    sign_in
     post '/records', params: {category: 'outgoings', note: '请客'}
     expect(response.status).to eq 422
 
