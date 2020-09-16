@@ -9,4 +9,9 @@ RSpec.describe Record, type: :model do
     record = Record.create note: 'xxx', note: 'xxx'
     expect(record.errors.details[:amount][0][:error]).to eq(:blank)
   end
+  it 'category only can be "income" or "outgoings"' do
+    expect {
+      Record.create amount: 500, note: 'xxx', category: 'out'
+    }.to raise_error(ArgumentError)
+  end
 end
