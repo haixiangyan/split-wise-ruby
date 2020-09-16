@@ -1158,3 +1158,220 @@ Processing by UsersController#me as HTML
   [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
 Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 568)
   [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (388.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "split_wise_ruby_test"[0m
+  [1m[35m (2204.9ms)[0m  [1m[35mCREATE DATABASE "split_wise_ruby_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "records" CASCADE[0m
+  [1m[35m (150.2ms)[0m  [1m[35mCREATE TABLE "records" ("id" bigserial primary key, "amount" integer NOT NULL, "category" smallint NOT NULL, "note" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (46.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (28.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200916154242)[0m
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200801111952);
+
+[0m
+  [1m[35m (25.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (8.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-09-16 15:55:07.286244"], ["updated_at", "2020-09-16 15:55:07.286244"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "b50c1d17fb30acd487f611fc44690f46dcd7beef"], ["created_at", "2020-09-16 15:55:07.310474"], ["updated_at", "2020-09-16 15:55:07.310474"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-16 23:55:07 +0800
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3109561252392376845)[0m
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3109561252392376845)[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-16 23:59:34 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "notes"=>"请客"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 21.8ms | Allocations: 3952)
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:03:30 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "notes"=>"请客"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 23.8ms | Allocations: 3952)
+  [1m[35m (2.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:06:12 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "notes"=>"请客"}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 20.7ms | Allocations: 3952)
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:07:05 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "notes"=>"请客"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 25.9ms | Allocations: 3967)
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:07:48 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "notes"=>"请客"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 25.4ms | Allocations: 3967)
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3109561252392376845)[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(3109561252392376845)[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3109561252392376845)[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3109561252392376845)[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:08:46 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "notes"=>"请客"}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 21.5ms | Allocations: 3967)
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:09:36 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "note"=>"请客"}
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (6.8ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 0], ["note", "请客"], ["created_at", "2020-09-16 16:09:37.004952"], ["updated_at", "2020-09-16 16:09:37.004952"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 37ms (Views: 0.3ms | ActiveRecord: 30.8ms | Allocations: 4529)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:09:46 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "note"=>"请客"}
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (4.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 0], ["note", "请客"], ["created_at", "2020-09-16 16:09:47.007533"], ["updated_at", "2020-09-16 16:09:47.007533"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 35ms (Views: 0.3ms | ActiveRecord: 29.6ms | Allocations: 4529)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (3.9ms)[0m  [1m[32mINSERT INTO "records" ("category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", 0], ["note", "xxx"], ["created_at", "2020-09-16 16:12:13.316660"], ["updated_at", "2020-09-16 16:12:13.316660"]]
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (2.9ms)[0m  [1m[32mINSERT INTO "records" ("category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["category", 0], ["note", "xxx"], ["created_at", "2020-09-16 16:13:13.055993"], ["updated_at", "2020-09-16 16:13:13.055993"]]
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:19:12 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"category"=>"outgoings", "note"=>"请客"}
+Completed 422 Unprocessable Entity in 41ms (Views: 0.2ms | ActiveRecord: 25.4ms | Allocations: 5846)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:19:31 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"category"=>"outgoings", "note"=>"请客"}
+Completed 422 Unprocessable Entity in 30ms (Views: 0.1ms | ActiveRecord: 24.1ms | Allocations: 5560)
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:23:29 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"income", "note"=>"吃饭"}
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (6.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 0], ["note", "吃饭"], ["created_at", "2020-09-16 16:23:29.219319"], ["updated_at", "2020-09-16 16:23:29.219319"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 38ms (Views: 0.3ms | ActiveRecord: 32.5ms | Allocations: 4561)
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:24:15 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"income", "note"=>"吃饭"}
+  [1m[35m (2.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (5.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 0], ["note", "吃饭"], ["created_at", "2020-09-16 16:24:15.500079"], ["updated_at", "2020-09-16 16:24:15.500079"]]
+  [1m[35m (1.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 34.7ms | Allocations: 4910)
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+Started POST "/users" for 127.0.0.1 at 2020-09-17 00:24:15 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"1@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (5.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "1@qq.com"], ["password_digest", "$2a$04$HIDVaUCJD9sf/R0iVZZiDuhzibKkcxMP2IxDK7GhEIc95XzNCdkmu"], ["created_at", "2020-09-16 16:24:15.570435"], ["updated_at", "2020-09-16 16:24:15.570435"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 400a11f2-a9d5-4701-bc51-fcda548e3797) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fcdd5d10268 @uri=#<URI::GID gid://split-wise-ruby/User/1>>]}
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 36ms (Views: 0.2ms | ActiveRecord: 25.9ms | Allocations: 5784)
+  [1m[35m (2.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-17 00:25:54 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"income", "note"=>"吃饭"}
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (3.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 0], ["note", "吃饭"], ["created_at", "2020-09-16 16:25:54.480837"], ["updated_at", "2020-09-16 16:25:54.480837"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 34ms (Views: 0.3ms | ActiveRecord: 27.4ms | Allocations: 4910)
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/users" for 127.0.0.1 at 2020-09-17 00:25:54 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"1@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (5.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "1@qq.com"], ["password_digest", "$2a$04$SKPcQ7lbjXvJaX6e0gRgrOQFmdbu5r8gMUhzLwZDK3ZPrlrlfOXzS"], ["created_at", "2020-09-16 16:25:54.545428"], ["updated_at", "2020-09-16 16:25:54.545428"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 7b136745-b85e-4467-8351-cdaa91731334) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007ffaf82eb670 @uri=#<URI::GID gid://split-wise-ruby/User/2>>]}
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 24.3ms | Allocations: 5784)
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (12.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
