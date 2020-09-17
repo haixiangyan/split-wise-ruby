@@ -13,7 +13,7 @@ RSpec.describe "Records", type: :request do
 
       body = JSON.parse(response.body)
 
-      expect(body["resources"]["id"]).to be
+      expect(body["resource"]["id"]).to be
     end
     it 'should not create a record' do
       sign_in
@@ -74,6 +74,24 @@ RSpec.describe "Records", type: :request do
       sign_in
       get "/records/9999"
       expect(response.status).to eq 404
+    end
+  end
+
+  context 'update' do
+    it 'should not update a record before sign in' do
+      record = Record.create! amount: 10000, category: 'income'
+      patch "/records/#{record.id}", params: {amount: 999}
+      expect(response.status).to eq 401
+    end
+    it 'should update a record' do
+      sign_in
+      record = Record.create! amount: 10000, category: 'income'
+      patch "/records/#{record.id}", params: {amount: 999}
+      expect(response.status).to eq 200
+
+      body = JSON.parse response.body
+      p body
+      expect(body["resource"]["amount"]).to eq 999
     end
   end
 end

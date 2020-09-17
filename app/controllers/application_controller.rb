@@ -18,7 +18,7 @@ class ApplicationController < ActionController::API
     return head 404 if resources.nil?
 
     if resources.errors.empty?
-      render json: {resources: resources}, status: 200
+      render json: {resource: resources}, status: 200
     else
       render json: {errors: resources.errors}, status: 422
     end

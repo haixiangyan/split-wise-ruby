@@ -20,6 +20,6 @@ RSpec.describe "Users", type: :request do
     body = JSON.parse(response.body)
 
     expect(response).to have_http_status :ok
-    expect(body["resources"]["id"]).to eq user.id
+    expect(body["resource"]["id"]).to eq user.id
   end
 end

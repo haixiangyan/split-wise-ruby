@@ -9,6 +9,12 @@ class RecordsController < ApplicationController
     render_resources Record.find(params[:id])
   end
 
+  def update
+    record = Record.find(params[:id])
+    record.update create_params
+    render_resource record
+  end
+
   def create
     render_resource Record.create create_params
   end
@@ -25,7 +31,6 @@ class RecordsController < ApplicationController
   end
 
   def create_params
-    p params
     params.permit(:amount, :category, :note)
   end
 end
