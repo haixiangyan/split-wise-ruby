@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
     s.validate
 
-    render_resources s
+    render_resource s
 
     session[:current_user_id] = s.user.id
   end

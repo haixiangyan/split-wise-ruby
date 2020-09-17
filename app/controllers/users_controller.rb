@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def create
-    render_resources User.create create_params
+    render_resource User.create create_params
   end
 
   def create_params
@@ -8,6 +8,6 @@ class UsersController < ApplicationController
   end
 
   def me
-    render_resources current_user
+    render_resource current_user
   end
 end
