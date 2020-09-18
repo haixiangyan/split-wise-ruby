@@ -6,7 +6,7 @@ class RecordsController < ApplicationController
   end
 
   def show
-    render_resources Record.find(params[:id])
+    render_resource Record.find(params[:id])
   end
 
   def update

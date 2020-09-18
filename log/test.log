@@ -7105,3 +7105,1708 @@ Processing by TagsController#destroy as HTML
   [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
 Completed 200 OK in 14ms (ActiveRecord: 9.3ms | Allocations: 895)
   [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (6.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.843515"], ["updated_at", "2020-09-18 15:06:56.843515"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.856822"], ["updated_at", "2020-09-18 15:06:56.856822"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.861257"], ["updated_at", "2020-09-18 15:06:56.861257"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.865582"], ["updated_at", "2020-09-18 15:06:56.865582"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.870027"], ["updated_at", "2020-09-18 15:06:56.870027"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.874408"], ["updated_at", "2020-09-18 15:06:56.874408"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.878894"], ["updated_at", "2020-09-18 15:06:56.878894"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.883253"], ["updated_at", "2020-09-18 15:06:56.883253"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.887702"], ["updated_at", "2020-09-18 15:06:56.887702"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.892113"], ["updated_at", "2020-09-18 15:06:56.892113"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:06:56.896518"], ["updated_at", "2020-09-18 15:06:56.896518"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:06:56 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 19ms (Views: 0.1ms | ActiveRecord: 14.2ms | Allocations: 817)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (3.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$aTTQ5wfIjAzOVLF6/eYP6ukieGo21ldpJW7/P.Nax6jf0fW5LgzI6"], ["created_at", "2020-09-18 15:06:56.987008"], ["updated_at", "2020-09-18 15:06:56.987008"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 8f7aa282-f058-4e9a-b1e5-9485f0c06c34) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa85555d0e8 @uri=#<URI::GID gid://split-wise-ruby/User/6>>]}
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:06:56 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 1550)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (3.7ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.027440"], ["updated_at", "2020-09-18 15:06:57.027440"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 20.5ms | Allocations: 3133)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$AybFsBp4cUU1VukRj0s/pOhde5q9BuLA7y1gPwTxp3UiwHvEJb.7y"], ["created_at", "2020-09-18 15:06:57.043408"], ["updated_at", "2020-09-18 15:06:57.043408"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: c23d4cc9-4f7e-4d52-bb80-242889f87741) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa85d998178 @uri=#<URI::GID gid://split-wise-ruby/User/7>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 583)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by TagsController#create as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 2100)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.073044"], ["updated_at", "2020-09-18 15:06:57.073044"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.077016"], ["updated_at", "2020-09-18 15:06:57.077016"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.080977"], ["updated_at", "2020-09-18 15:06:57.080977"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.085033"], ["updated_at", "2020-09-18 15:06:57.085033"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.089004"], ["updated_at", "2020-09-18 15:06:57.089004"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.092855"], ["updated_at", "2020-09-18 15:06:57.092855"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.096720"], ["updated_at", "2020-09-18 15:06:57.096720"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.100565"], ["updated_at", "2020-09-18 15:06:57.100565"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.104652"], ["updated_at", "2020-09-18 15:06:57.104652"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.108482"], ["updated_at", "2020-09-18 15:06:57.108482"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.112259"], ["updated_at", "2020-09-18 15:06:57.112259"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$F43/hFT2umhLUi92hYmU5.dzQTB70q.lSnHf8VPjX2xCMIXDGJNdG"], ["created_at", "2020-09-18 15:06:57.120430"], ["updated_at", "2020-09-18 15:06:57.120430"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 44455492-42a6-462d-9f99-d2c06c3312d8) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa8553734d0 @uri=#<URI::GID gid://split-wise-ruby/User/8>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 583)
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.146464"], ["updated_at", "2020-09-18 15:06:57.146464"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/tags/23" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$5P/tGBlR6lymlcKGr6jAm.74zWkLpMb/rRffMYiKVlaQy3sGC8R06"], ["created_at", "2020-09-18 15:06:57.163307"], ["updated_at", "2020-09-18 15:06:57.163307"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 4ddd735c-32b4-48ec-ad34-76890fc3ffef) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa857d9cbd0 @uri=#<URI::GID gid://split-wise-ruby/User/9>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 584)
+Started GET "/tags/9999" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.181200"], ["updated_at", "2020-09-18 15:06:57.181200"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/24" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 298)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$8SDEZvCwYXFunvCdC.Iaz.J7HmKOdQWaAmYf3v3o4SKjiXsVowjEi"], ["created_at", "2020-09-18 15:06:57.201067"], ["updated_at", "2020-09-18 15:06:57.201067"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 274e343d-2395-4f7c-a67d-961abd51cb89) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa858ae6b10 @uri=#<URI::GID gid://split-wise-ruby/User/10>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.9ms | Allocations: 583)
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:06:57.212420"], ["updated_at", "2020-09-18 15:06:57.212420"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/25" for 127.0.0.1 at 2020-09-18 23:06:57 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mTag Load (3.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Destroy (1.9ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = $1[0m  [["id", 25]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 13ms (ActiveRecord: 10.1ms | Allocations: 790)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (3.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.616553"], ["updated_at", "2020-09-18 15:07:40.616553"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.624448"], ["updated_at", "2020-09-18 15:07:40.624448"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.628373"], ["updated_at", "2020-09-18 15:07:40.628373"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.632040"], ["updated_at", "2020-09-18 15:07:40.632040"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.635824"], ["updated_at", "2020-09-18 15:07:40.635824"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.639339"], ["updated_at", "2020-09-18 15:07:40.639339"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.642955"], ["updated_at", "2020-09-18 15:07:40.642955"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.646941"], ["updated_at", "2020-09-18 15:07:40.646941"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.650468"], ["updated_at", "2020-09-18 15:07:40.650468"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.654065"], ["updated_at", "2020-09-18 15:07:40.654065"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:07:40.657869"], ["updated_at", "2020-09-18 15:07:40.657869"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 18ms (Views: 0.1ms | ActiveRecord: 13.2ms | Allocations: 817)
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$VrlZ75lEUaO6ZtJ/v/jJd.QrMve7xxkEdHPXKXVRrukBg39jjqv16"], ["created_at", "2020-09-18 15:07:40.738802"], ["updated_at", "2020-09-18 15:07:40.738802"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: ae4515dc-82d6-4478-b161-76755b2c61f1) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbf931f3c68 @uri=#<URI::GID gid://split-wise-ruby/User/11>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 1550)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (3.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.776492"], ["updated_at", "2020-09-18 15:07:40.776492"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 18.7ms | Allocations: 3131)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$LLGvaf2Lyztc1fXfWiCQaO9CQGqBBBmO8zo8RauOlz76a5KsSeRCe"], ["created_at", "2020-09-18 15:07:40.792106"], ["updated_at", "2020-09-18 15:07:40.792106"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 87f8345a-931b-46ec-86c1-4a40dbbda737) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbf94480fe8 @uri=#<URI::GID gid://split-wise-ruby/User/12>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 583)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#create as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 2100)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 298)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.825060"], ["updated_at", "2020-09-18 15:07:40.825060"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.829197"], ["updated_at", "2020-09-18 15:07:40.829197"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.832964"], ["updated_at", "2020-09-18 15:07:40.832964"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.836595"], ["updated_at", "2020-09-18 15:07:40.836595"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.840226"], ["updated_at", "2020-09-18 15:07:40.840226"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.843770"], ["updated_at", "2020-09-18 15:07:40.843770"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.847462"], ["updated_at", "2020-09-18 15:07:40.847462"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.851050"], ["updated_at", "2020-09-18 15:07:40.851050"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.5ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.854613"], ["updated_at", "2020-09-18 15:07:40.854613"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.858835"], ["updated_at", "2020-09-18 15:07:40.858835"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.862618"], ["updated_at", "2020-09-18 15:07:40.862618"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$WkxwPn3MRJSNXO1f0tOPQugNQqLpTJ3e7/qFxgxTrSSfTNjN.cIMW"], ["created_at", "2020-09-18 15:07:40.870793"], ["updated_at", "2020-09-18 15:07:40.870793"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: ee97f2fa-f838-4ca2-becc-9136d4fc8248) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbf939a9b10 @uri=#<URI::GID gid://split-wise-ruby/User/13>>]}
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 583)
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.9ms | Allocations: 3415)
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.5ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.907776"], ["updated_at", "2020-09-18 15:07:40.907776"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/tags/38" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 299)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$KJNOt8QtCJx4QIEH3t/ZE.kIctjK2IAcALtU89O.9XVuMT1iFQDs2"], ["created_at", "2020-09-18 15:07:40.927521"], ["updated_at", "2020-09-18 15:07:40.927521"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 072d43da-04b8-4567-bfcd-a27898c5c8d5) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbf9446ae78 @uri=#<URI::GID gid://split-wise-ruby/User/14>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 583)
+Started GET "/tags/9999" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"9999"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mTag Load (3.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 9999], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (Views: 0.1ms | ActiveRecord: 6.4ms | Allocations: 567)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.954697"], ["updated_at", "2020-09-18 15:07:40.954697"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/39" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 298)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$z1kW5H/lSBbEkizYuFDYq.n/HFgp1Uvo99djAztOjqZy0zL5cRdja"], ["created_at", "2020-09-18 15:07:40.973935"], ["updated_at", "2020-09-18 15:07:40.973935"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 966bead8-a40c-4c73-9ce6-c1962fc9ec59) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbf97a70ab8 @uri=#<URI::GID gid://split-wise-ruby/User/15>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 583)
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:07:40.984583"], ["updated_at", "2020-09-18 15:07:40.984583"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/40" for 127.0.0.1 at 2020-09-18 23:07:40 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mTag Load (1.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Destroy (1.9ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = $1[0m  [["id", 40]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (ActiveRecord: 8.0ms | Allocations: 637)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (4.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.775606"], ["updated_at", "2020-09-18 15:08:32.775606"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.785099"], ["updated_at", "2020-09-18 15:08:32.785099"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.788804"], ["updated_at", "2020-09-18 15:08:32.788804"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.792805"], ["updated_at", "2020-09-18 15:08:32.792805"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (5.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.796685"], ["updated_at", "2020-09-18 15:08:32.796685"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.804804"], ["updated_at", "2020-09-18 15:08:32.804804"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.808497"], ["updated_at", "2020-09-18 15:08:32.808497"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.812195"], ["updated_at", "2020-09-18 15:08:32.812195"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.816408"], ["updated_at", "2020-09-18 15:08:32.816408"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.820495"], ["updated_at", "2020-09-18 15:08:32.820495"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:32.824457"], ["updated_at", "2020-09-18 15:08:32.824457"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (5.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$zXPzRzsPvMAuSuGb/3djeuoAu26nq.kunqzGylMbhdJdS/J1h31Ne"], ["created_at", "2020-09-18 15:08:32.866571"], ["updated_at", "2020-09-18 15:08:32.866571"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa402169d30 @uri=#<URI::GID gid://split-wise-ruby/User/16>>]}
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:32 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326] Performing ActionMailer::MailDeliveryJob (Job ID: bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326) from Async(mailers) enqueued at 2020-09-18T15:08:32Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa3f8a0f160 @uri=#<URI::GID gid://split-wise-ruby/User/16>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.9ms | Allocations: 213)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326] UserMailer#welcome_email: processed outbound mail in 26.9ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326] Delivered mail 5f64cd70e52b9_2e038e024820@HAIXIANGYAN-MB1.mail (6.9ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326] Date: Fri, 18 Sep 2020 23:08:32 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd70e52b9_2e038e024820@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326] Performed ActionMailer::MailDeliveryJob (Job ID: bcd03dd6-68ab-4bf3-8a3b-3f1a7c43b326) from Async(mailers) in 34.43ms
+  [1m[36mUser Load (30.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 0.4ms | ActiveRecord: 30.7ms | Allocations: 9438)
+Started POST "/records" for 127.0.0.1 at 2020-09-18 23:08:32 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"income", "note"=>"吃饭"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.6ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["note", "吃饭"], ["created_at", "2020-09-18 15:08:32.960796"], ["updated_at", "2020-09-18 15:08:32.960796"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 7.3ms | Allocations: 1091)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$ZV0AR4jx4nYY1MBouRIyuOcB/v1pC6BTpFjTAMglQUgIEMqHfZ9je"], ["created_at", "2020-09-18 15:08:32.976486"], ["updated_at", "2020-09-18 15:08:32.976486"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 9bc66f4e-b527-4bfd-88b2-8fee61b7de99) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa3fcb457b0 @uri=#<URI::GID gid://split-wise-ruby/User/17>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:32 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9bc66f4e-b527-4bfd-88b2-8fee61b7de99] Performing ActionMailer::MailDeliveryJob (Job ID: 9bc66f4e-b527-4bfd-88b2-8fee61b7de99) from Async(mailers) enqueued at 2020-09-18T15:08:32Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa3fb1fb868 @uri=#<URI::GID gid://split-wise-ruby/User/17>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9bc66f4e-b527-4bfd-88b2-8fee61b7de99]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9bc66f4e-b527-4bfd-88b2-8fee61b7de99]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9bc66f4e-b527-4bfd-88b2-8fee61b7de99] UserMailer#welcome_email: processed outbound mail in 1.0ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9bc66f4e-b527-4bfd-88b2-8fee61b7de99] Delivered mail 5f64cd70f3a29_2e038e024917@HAIXIANGYAN-MB1.mail (1.2ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9bc66f4e-b527-4bfd-88b2-8fee61b7de99] Date: Fri, 18 Sep 2020 23:08:32 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd70f3a29_2e038e024917@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9bc66f4e-b527-4bfd-88b2-8fee61b7de99] Performed ActionMailer::MailDeliveryJob (Job ID: 9bc66f4e-b527-4bfd-88b2-8fee61b7de99) from Async(mailers) in 2.56ms
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.5ms | Allocations: 2797)
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:33.002793"], ["updated_at", "2020-09-18 15:08:33.002793"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/records/145" for 127.0.0.1 at 2020-09-18 23:08:33 +0800
+Processing by RecordsController#destroy as HTML
+  Parameters: {"id"=>"145"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mRecord Load (3.9ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 145], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Destroy (2.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 145]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 13ms (ActiveRecord: 10.1ms | Allocations: 770)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$te8x9Y.uh5Jo3/uFQKgpIu/npbzWTVmkADSpI8nJ47pKvTdW8JoSe"], ["created_at", "2020-09-18 15:08:33.033436"], ["updated_at", "2020-09-18 15:08:33.033436"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 872787fa-89ac-4ece-9d07-d365624a5364) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa4020d7cc8 @uri=#<URI::GID gid://split-wise-ruby/User/18>>]}
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:33 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [872787fa-89ac-4ece-9d07-d365624a5364] Performing ActionMailer::MailDeliveryJob (Job ID: 872787fa-89ac-4ece-9d07-d365624a5364) from Async(mailers) enqueued at 2020-09-18T15:08:33Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa3fd4486a0 @uri=#<URI::GID gid://split-wise-ruby/User/18>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [872787fa-89ac-4ece-9d07-d365624a5364]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [872787fa-89ac-4ece-9d07-d365624a5364]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [872787fa-89ac-4ece-9d07-d365624a5364] UserMailer#welcome_email: processed outbound mail in 0.8ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [872787fa-89ac-4ece-9d07-d365624a5364] Delivered mail 5f64cd71ab60_2e038e02505@HAIXIANGYAN-MB1.mail (1.2ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [872787fa-89ac-4ece-9d07-d365624a5364] Date: Fri, 18 Sep 2020 23:08:33 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd71ab60_2e038e02505@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [872787fa-89ac-4ece-9d07-d365624a5364] Performed ActionMailer::MailDeliveryJob (Job ID: 872787fa-89ac-4ece-9d07-d365624a5364) from Async(mailers) in 2.36ms
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 2788)
+Started GET "/records?page=1" for 127.0.0.1 at 2020-09-18 23:08:33 +0800
+Processing by RecordsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.5ms)[0m  [1m[34mSELECT "records".* FROM "records" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 5.4ms | Allocations: 1611)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$CIfrwXShixRTHRdbHhePxuWjwlJ/2hcXIrmQnu/Cq/lUxKMSoj.Y2"], ["created_at", "2020-09-18 15:08:33.069286"], ["updated_at", "2020-09-18 15:08:33.069286"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 42eabfaf-514d-47f5-bc80-ae2f8e4e88a8) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa4020c4b78 @uri=#<URI::GID gid://split-wise-ruby/User/19>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:33 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [42eabfaf-514d-47f5-bc80-ae2f8e4e88a8] Performing ActionMailer::MailDeliveryJob (Job ID: 42eabfaf-514d-47f5-bc80-ae2f8e4e88a8) from Async(mailers) enqueued at 2020-09-18T15:08:33Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa3f8982a58 @uri=#<URI::GID gid://split-wise-ruby/User/19>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [42eabfaf-514d-47f5-bc80-ae2f8e4e88a8]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [42eabfaf-514d-47f5-bc80-ae2f8e4e88a8]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [42eabfaf-514d-47f5-bc80-ae2f8e4e88a8] UserMailer#welcome_email: processed outbound mail in 0.9ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [42eabfaf-514d-47f5-bc80-ae2f8e4e88a8] Delivered mail 5f64cd711345a_2e038e0251f3@HAIXIANGYAN-MB1.mail (1.4ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [42eabfaf-514d-47f5-bc80-ae2f8e4e88a8] Date: Fri, 18 Sep 2020 23:08:33 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd711345a_2e038e0251f3@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [42eabfaf-514d-47f5-bc80-ae2f8e4e88a8] Performed ActionMailer::MailDeliveryJob (Job ID: 42eabfaf-514d-47f5-bc80-ae2f8e4e88a8) from Async(mailers) in 2.55ms
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 2788)
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:33.082960"], ["updated_at", "2020-09-18 15:08:33.082960"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/records/146" for 127.0.0.1 at 2020-09-18 23:08:33 +0800
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"146"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.8ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 146], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 4.1ms | Allocations: 587)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$qfnisrUNynSlHeIsuRJXDOldzobMparvFwFXGVcbacSzcLXpajVem"], ["created_at", "2020-09-18 15:08:33.105489"], ["updated_at", "2020-09-18 15:08:33.105489"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 9fb71dce-64aa-4f8f-a30b-bda778a4ffe0) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa3fcf56598 @uri=#<URI::GID gid://split-wise-ruby/User/20>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:33 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9fb71dce-64aa-4f8f-a30b-bda778a4ffe0] Performing ActionMailer::MailDeliveryJob (Job ID: 9fb71dce-64aa-4f8f-a30b-bda778a4ffe0) from Async(mailers) enqueued at 2020-09-18T15:08:33Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fa3fce96478 @uri=#<URI::GID gid://split-wise-ruby/User/20>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9fb71dce-64aa-4f8f-a30b-bda778a4ffe0]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9fb71dce-64aa-4f8f-a30b-bda778a4ffe0]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9fb71dce-64aa-4f8f-a30b-bda778a4ffe0] UserMailer#welcome_email: processed outbound mail in 0.7ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9fb71dce-64aa-4f8f-a30b-bda778a4ffe0] Delivered mail 5f64cd711c1f1_2e038e02525b@HAIXIANGYAN-MB1.mail (1.3ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9fb71dce-64aa-4f8f-a30b-bda778a4ffe0] Date: Fri, 18 Sep 2020 23:08:33 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd711c1f1_2e038e02525b@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [9fb71dce-64aa-4f8f-a30b-bda778a4ffe0] Performed ActionMailer::MailDeliveryJob (Job ID: 9fb71dce-64aa-4f8f-a30b-bda778a4ffe0) from Async(mailers) in 2.46ms
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 2788)
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:33.119127"], ["updated_at", "2020-09-18 15:08:33.119127"]]
+  [1m[35m (0.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/records/147" for 127.0.0.1 at 2020-09-18 23:08:33 +0800
+Processing by RecordsController#update as HTML
+  Parameters: {"amount"=>"999", "id"=>"147"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.6ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 147], ["LIMIT", 1]]
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Update (2.1ms)[0m  [1m[33mUPDATE "records" SET "amount" = $1, "updated_at" = $2 WHERE "records"."id" = $3[0m  [["amount", 999], ["updated_at", "2020-09-18 15:08:33.130993"], ["id", 147]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 7.9ms | Allocations: 1002)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (5.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.028468"], ["updated_at", "2020-09-18 15:08:54.028468"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.038950"], ["updated_at", "2020-09-18 15:08:54.038950"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.043497"], ["updated_at", "2020-09-18 15:08:54.043497"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.047605"], ["updated_at", "2020-09-18 15:08:54.047605"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.051475"], ["updated_at", "2020-09-18 15:08:54.051475"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.055361"], ["updated_at", "2020-09-18 15:08:54.055361"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.059077"], ["updated_at", "2020-09-18 15:08:54.059077"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.063072"], ["updated_at", "2020-09-18 15:08:54.063072"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.067059"], ["updated_at", "2020-09-18 15:08:54.067059"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.071260"], ["updated_at", "2020-09-18 15:08:54.071260"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.075244"], ["updated_at", "2020-09-18 15:08:54.075244"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (5.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$4O2pZzsuv8P0VAwUeHaFmuNLHweifXpldh8PJRVkPGaf9Yu7Fo9U2"], ["created_at", "2020-09-18 15:08:54.114064"], ["updated_at", "2020-09-18 15:08:54.114064"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: b109d4e5-77c8-4596-baea-fb9ad90dbea8) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac88f1e870 @uri=#<URI::GID gid://split-wise-ruby/User/21>>]}
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b109d4e5-77c8-4596-baea-fb9ad90dbea8] Performing ActionMailer::MailDeliveryJob (Job ID: b109d4e5-77c8-4596-baea-fb9ad90dbea8) from Async(mailers) enqueued at 2020-09-18T15:08:54Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac875b9fd8 @uri=#<URI::GID gid://split-wise-ruby/User/21>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b109d4e5-77c8-4596-baea-fb9ad90dbea8]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b109d4e5-77c8-4596-baea-fb9ad90dbea8]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 213)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b109d4e5-77c8-4596-baea-fb9ad90dbea8] UserMailer#welcome_email: processed outbound mail in 13.1ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b109d4e5-77c8-4596-baea-fb9ad90dbea8] Delivered mail 5f64cd86290a9_3db38e054591@HAIXIANGYAN-MB1.mail (2.7ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b109d4e5-77c8-4596-baea-fb9ad90dbea8] Date: Fri, 18 Sep 2020 23:08:54 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd86290a9_3db38e054591@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b109d4e5-77c8-4596-baea-fb9ad90dbea8] Performed ActionMailer::MailDeliveryJob (Job ID: b109d4e5-77c8-4596-baea-fb9ad90dbea8) from Async(mailers) in 16.51ms
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 11.3ms | Allocations: 9388)
+Started POST "/records" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"income", "note"=>"吃饭"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["note", "吃饭"], ["created_at", "2020-09-18 15:08:54.182293"], ["updated_at", "2020-09-18 15:08:54.182293"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 5.9ms | Allocations: 1089)
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$0zfC1FpAAN786ahDdeBc8u3.SAndz5EdQ2W2p6u8pOscWu93fMqQi"], ["created_at", "2020-09-18 15:08:54.207702"], ["updated_at", "2020-09-18 15:08:54.207702"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac875bad20 @uri=#<URI::GID gid://split-wise-ruby/User/22>>]}
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42] Performing ActionMailer::MailDeliveryJob (Job ID: 04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42) from Async(mailers) enqueued at 2020-09-18T15:08:54Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac8956ae18 @uri=#<URI::GID gid://split-wise-ruby/User/22>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42] UserMailer#welcome_email: processed outbound mail in 0.8ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42] Delivered mail 5f64cd863565b_3db38e054684@HAIXIANGYAN-MB1.mail (1.2ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42] Date: Fri, 18 Sep 2020 23:08:54 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd863565b_3db38e054684@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42] Performed ActionMailer::MailDeliveryJob (Job ID: 04e7b6d4-99a7-4fc2-b98a-e199c4f5fc42) from Async(mailers) in 2.27ms
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 2796)
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.222512"], ["updated_at", "2020-09-18 15:08:54.222512"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/records/160" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#destroy as HTML
+  Parameters: {"id"=>"160"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mRecord Load (3.6ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 160], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Destroy (2.1ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 160]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 13ms (ActiveRecord: 10.2ms | Allocations: 766)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$jTaENS97236BRIOjIrV3AeZl0jtNSk3SZehiCL4.uLar36HjSzAyG"], ["created_at", "2020-09-18 15:08:54.252590"], ["updated_at", "2020-09-18 15:08:54.252590"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 4a6c3ca8-28a9-47ba-8453-b0acea004154) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac8a87a4e0 @uri=#<URI::GID gid://split-wise-ruby/User/23>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [4a6c3ca8-28a9-47ba-8453-b0acea004154] Performing ActionMailer::MailDeliveryJob (Job ID: 4a6c3ca8-28a9-47ba-8453-b0acea004154) from Async(mailers) enqueued at 2020-09-18T15:08:54Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac88ea30d0 @uri=#<URI::GID gid://split-wise-ruby/User/23>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [4a6c3ca8-28a9-47ba-8453-b0acea004154]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [4a6c3ca8-28a9-47ba-8453-b0acea004154]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [4a6c3ca8-28a9-47ba-8453-b0acea004154] UserMailer#welcome_email: processed outbound mail in 0.7ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [4a6c3ca8-28a9-47ba-8453-b0acea004154] Delivered mail 5f64cd8640213_3db38e05475f@HAIXIANGYAN-MB1.mail (1.3ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [4a6c3ca8-28a9-47ba-8453-b0acea004154] Date: Fri, 18 Sep 2020 23:08:54 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd8640213_3db38e05475f@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [4a6c3ca8-28a9-47ba-8453-b0acea004154] Performed ActionMailer::MailDeliveryJob (Job ID: 4a6c3ca8-28a9-47ba-8453-b0acea004154) from Async(mailers) in 2.3ms
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 2788)
+Started GET "/records?page=1" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.1ms)[0m  [1m[34mSELECT "records".* FROM "records" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 4.7ms | Allocations: 1613)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$TrztZ3fGjzlas2EmvJ8w.evXBavYy9Sw20fN2lNG2gnLqD71C2ya6"], ["created_at", "2020-09-18 15:08:54.287696"], ["updated_at", "2020-09-18 15:08:54.287696"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: b0fe2075-524b-4949-bd6a-39be7c60d981) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac894c5198 @uri=#<URI::GID gid://split-wise-ruby/User/24>>]}
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b0fe2075-524b-4949-bd6a-39be7c60d981] Performing ActionMailer::MailDeliveryJob (Job ID: b0fe2075-524b-4949-bd6a-39be7c60d981) from Async(mailers) enqueued at 2020-09-18T15:08:54Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac89475698 @uri=#<URI::GID gid://split-wise-ruby/User/24>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b0fe2075-524b-4949-bd6a-39be7c60d981]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b0fe2075-524b-4949-bd6a-39be7c60d981]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b0fe2075-524b-4949-bd6a-39be7c60d981] UserMailer#welcome_email: processed outbound mail in 0.7ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b0fe2075-524b-4949-bd6a-39be7c60d981] Delivered mail 5f64cd864896c_3db38e0548dd@HAIXIANGYAN-MB1.mail (1.2ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b0fe2075-524b-4949-bd6a-39be7c60d981] Date: Fri, 18 Sep 2020 23:08:54 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd864896c_3db38e0548dd@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [b0fe2075-524b-4949-bd6a-39be7c60d981] Performed ActionMailer::MailDeliveryJob (Job ID: b0fe2075-524b-4949-bd6a-39be7c60d981) from Async(mailers) in 2.28ms
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 2789)
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.300918"], ["updated_at", "2020-09-18 15:08:54.300918"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/records/161" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"161"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.6ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 161], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 4.1ms | Allocations: 580)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$xlkbr/roFnqLMLS9nX.h0u6/D285HwDUuiUFTBPka/x8sLPF16/u."], ["created_at", "2020-09-18 15:08:54.323236"], ["updated_at", "2020-09-18 15:08:54.323236"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: f14bb6d9-ae01-4e26-b759-737d9e4fc55d) to Async(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac88d77008 @uri=#<URI::GID gid://split-wise-ruby/User/25>>]}
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[ActiveJob] [ActionMailer::MailDeliveryJob] [f14bb6d9-ae01-4e26-b759-737d9e4fc55d] Performing ActionMailer::MailDeliveryJob (Job ID: f14bb6d9-ae01-4e26-b759-737d9e4fc55d) from Async(mailers) enqueued at 2020-09-18T15:08:54Z with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac88cd7b48 @uri=#<URI::GID gid://split-wise-ruby/User/25>>]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [f14bb6d9-ae01-4e26-b759-737d9e4fc55d]   Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+[ActiveJob] [ActionMailer::MailDeliveryJob] [f14bb6d9-ae01-4e26-b759-737d9e4fc55d]   Rendered user_mailer/welcome_email.html.erb within layouts/mailer (Duration: 0.0ms | Allocations: 5)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [f14bb6d9-ae01-4e26-b759-737d9e4fc55d] UserMailer#welcome_email: processed outbound mail in 0.7ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [f14bb6d9-ae01-4e26-b759-737d9e4fc55d] Delivered mail 5f64cd86514b2_3db38e0549da@HAIXIANGYAN-MB1.mail (1.3ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [f14bb6d9-ae01-4e26-b759-737d9e4fc55d] Date: Fri, 18 Sep 2020 23:08:54 +0800
+From: yan6123@qq.com
+To: spec_test_helper@qq.com
+Message-ID: <5f64cd86514b2_3db38e0549da@HAIXIANGYAN-MB1.mail>
+Subject: =?UTF-8?Q?=E6=AC=A2=E8=BF=8E=E6=9D=A5=E5=88=B0_Split_Wise?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPg0KICBzcGVjX3Rlc3Rf
+aGVscGVyQHFxLmNvbSDkvaDlpb3vvIwNCjwvcD4NCjxwPg0KICDmrKLov47m
+naXliLDmiJHnmoTnvZHnq5nvvIzor7forrDkuIDnrJTotKblkKcNCjwvcD4N
+CiAgPC9ib2R5Pg0KPC9odG1sPg0K
+
+[ActiveJob] [ActionMailer::MailDeliveryJob] [f14bb6d9-ae01-4e26-b759-737d9e4fc55d] Performed ActionMailer::MailDeliveryJob (Job ID: f14bb6d9-ae01-4e26-b759-737d9e4fc55d) from Async(mailers) in 2.31ms
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 2788)
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.337104"], ["updated_at", "2020-09-18 15:08:54.337104"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/records/162" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#update as HTML
+  Parameters: {"amount"=>"999", "id"=>"162"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 162], ["LIMIT", 1]]
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Update (2.2ms)[0m  [1m[33mUPDATE "records" SET "amount" = $1, "updated_at" = $2 WHERE "records"."id" = $3[0m  [["amount", 999], ["updated_at", "2020-09-18 15:08:54.349475"], ["id", 162]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 8.1ms | Allocations: 996)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/records" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "note"=>"请客"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 313)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$O5wyCOcFBAYRZBSkxiur5OYDqVEzhHvjkiGqf8D4k2VVuCbFccwTm"], ["created_at", "2020-09-18 15:08:54.377711"], ["updated_at", "2020-09-18 15:08:54.377711"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: a3602768-770e-43d5-b484-cd9458add5ee) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac88932bf0 @uri=#<URI::GID gid://split-wise-ruby/User/26>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 2.4ms | Allocations: 583)
+Started POST "/records" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"amount"=>"10000", "category"=>"outgoings", "note"=>"请客"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.5ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 1], ["note", "请客"], ["created_at", "2020-09-18 15:08:54.395337"], ["updated_at", "2020-09-18 15:08:54.395337"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 5.7ms | Allocations: 901)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$dEN4KUIFAng9262yrf9qZ.DhaLwQIIyd4W1WLIpVAezg/ObIM6pVK"], ["created_at", "2020-09-18 15:08:54.411128"], ["updated_at", "2020-09-18 15:08:54.411128"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: b440c490-93c0-4b5d-b9a2-12f4df681fcc) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac874077d0 @uri=#<URI::GID gid://split-wise-ruby/User/27>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 583)
+Started POST "/records" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#create as HTML
+  Parameters: {"category"=>"outgoings", "note"=>"请客"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 2139)
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.437251"], ["updated_at", "2020-09-18 15:08:54.437251"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/records/164" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#destroy as HTML
+  Parameters: {"id"=>"164"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 298)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$SyffYRoXLJTMVsoS7xkOeukhcLyHF0zorNF9BNnbcoG42xsOdQ586"], ["created_at", "2020-09-18 15:08:54.458993"], ["updated_at", "2020-09-18 15:08:54.458993"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: e898d4b2-96c2-4f22-979f-8ff9a4648a05) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac88d4de60 @uri=#<URI::GID gid://split-wise-ruby/User/28>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 2.1ms | Allocations: 583)
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.6ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.471407"], ["updated_at", "2020-09-18 15:08:54.471407"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/records/165" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#destroy as HTML
+  Parameters: {"id"=>"165"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 165], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Destroy (2.1ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 165]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (ActiveRecord: 8.4ms | Allocations: 592)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/records" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 298)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.506482"], ["updated_at", "2020-09-18 15:08:54.506482"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.510752"], ["updated_at", "2020-09-18 15:08:54.510752"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.515018"], ["updated_at", "2020-09-18 15:08:54.515018"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.519426"], ["updated_at", "2020-09-18 15:08:54.519426"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.523234"], ["updated_at", "2020-09-18 15:08:54.523234"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.527588"], ["updated_at", "2020-09-18 15:08:54.527588"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.531812"], ["updated_at", "2020-09-18 15:08:54.531812"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.536227"], ["updated_at", "2020-09-18 15:08:54.536227"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.540202"], ["updated_at", "2020-09-18 15:08:54.540202"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.544662"], ["updated_at", "2020-09-18 15:08:54.544662"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.548711"], ["updated_at", "2020-09-18 15:08:54.548711"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$qtZGvWW3.o.wXojtVwqx0eTeBaXiFFwvkbx0YdJyJIx7sRi2FJGp6"], ["created_at", "2020-09-18 15:08:54.557818"], ["updated_at", "2020-09-18 15:08:54.557818"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: cd81f27e-970b-4501-a196-2be254995d72) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac894fcbc0 @uri=#<URI::GID gid://split-wise-ruby/User/29>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 583)
+Started GET "/records" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.4ms)[0m  [1m[34mSELECT "records".* FROM "records" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 4.1ms | Allocations: 1607)
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.585719"], ["updated_at", "2020-09-18 15:08:54.585719"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/records/177" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"177"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 298)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$9LuKIrLHT/BjucjTSfaNLOwzp3kBFylKrJ0vD7c4t6yuLEYjROvHi"], ["created_at", "2020-09-18 15:08:54.605672"], ["updated_at", "2020-09-18 15:08:54.605672"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: eff888eb-9b5b-4337-9ecb-c70c5fde51c0) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac8a89b8e8 @uri=#<URI::GID gid://split-wise-ruby/User/30>>]}
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 583)
+Started GET "/records/9999" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"9999"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mRecord Load (2.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 9999], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (Views: 0.1ms | ActiveRecord: 4.1ms | Allocations: 433)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.630056"], ["updated_at", "2020-09-18 15:08:54.630056"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/records/178" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#update as HTML
+  Parameters: {"amount"=>"999", "id"=>"178"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 298)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$sf9VFx4xeGudZ/TvrUB11.1GrVuv835ylq4ahEl5l6Nh2UzEgvaTm"], ["created_at", "2020-09-18 15:08:54.650929"], ["updated_at", "2020-09-18 15:08:54.650929"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 0af8188b-f53b-473e-bc22-8aeeaa77d965) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fac89562cb8 @uri=#<URI::GID gid://split-wise-ruby/User/31>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.8ms | Allocations: 583)
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:08:54.662258"], ["updated_at", "2020-09-18 15:08:54.662258"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started PATCH "/records/179" for 127.0.0.1 at 2020-09-18 23:08:54 +0800
+Processing by RecordsController#update as HTML
+  Parameters: {"amount"=>"999", "id"=>"179"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mRecord Load (3.1ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 179], ["LIMIT", 1]]
+[31mUnpermitted parameter: :id[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Update (2.9ms)[0m  [1m[33mUPDATE "records" SET "amount" = $1, "updated_at" = $2 WHERE "records"."id" = $3[0m  [["amount", 999], ["updated_at", "2020-09-18 15:08:54.675911"], ["id", 179]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 9.7ms | Allocations: 966)
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (6.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.169233"], ["updated_at", "2020-09-18 15:09:03.169233"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.181958"], ["updated_at", "2020-09-18 15:09:03.181958"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.185700"], ["updated_at", "2020-09-18 15:09:03.185700"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.189391"], ["updated_at", "2020-09-18 15:09:03.189391"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.193389"], ["updated_at", "2020-09-18 15:09:03.193389"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.197399"], ["updated_at", "2020-09-18 15:09:03.197399"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.201559"], ["updated_at", "2020-09-18 15:09:03.201559"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.205525"], ["updated_at", "2020-09-18 15:09:03.205525"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.209524"], ["updated_at", "2020-09-18 15:09:03.209524"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.213646"], ["updated_at", "2020-09-18 15:09:03.213646"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:03.217608"], ["updated_at", "2020-09-18 15:09:03.217608"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 18ms (Views: 0.1ms | ActiveRecord: 13.6ms | Allocations: 817)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$MhX3zzgepwLN4NafOtjUL.w/h/RpngYd1P.3ogrFvylShu8P47ZqC"], ["created_at", "2020-09-18 15:09:03.300904"], ["updated_at", "2020-09-18 15:09:03.300904"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 89d899c3-fd95-49ee-95b7-b039c8b7328d) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbd264ff250 @uri=#<URI::GID gid://split-wise-ruby/User/32>>]}
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 1550)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (4.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.341945"], ["updated_at", "2020-09-18 15:09:03.341945"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 21.3ms | Allocations: 3135)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$/22LiiadeuLltTF0iGHvMuCk2hoSmD44qZtVA/uLU94tBETtJC1Fu"], ["created_at", "2020-09-18 15:09:03.358669"], ["updated_at", "2020-09-18 15:09:03.358669"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: acaea4fc-50fe-4504-be3c-bf67e227ba73) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbd29af1f70 @uri=#<URI::GID gid://split-wise-ruby/User/33>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 583)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#create as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 3.3ms | Allocations: 2108)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 298)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.393422"], ["updated_at", "2020-09-18 15:09:03.393422"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.397418"], ["updated_at", "2020-09-18 15:09:03.397418"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.401091"], ["updated_at", "2020-09-18 15:09:03.401091"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.404804"], ["updated_at", "2020-09-18 15:09:03.404804"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.408408"], ["updated_at", "2020-09-18 15:09:03.408408"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.412243"], ["updated_at", "2020-09-18 15:09:03.412243"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.415932"], ["updated_at", "2020-09-18 15:09:03.415932"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.419469"], ["updated_at", "2020-09-18 15:09:03.419469"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.423274"], ["updated_at", "2020-09-18 15:09:03.423274"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.427026"], ["updated_at", "2020-09-18 15:09:03.427026"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.430837"], ["updated_at", "2020-09-18 15:09:03.430837"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$dyz5PCYvC8JjoSsknG1WOeck/5hR.ZYK30ON4Tjf2Oc7VLzyYIQGa"], ["created_at", "2020-09-18 15:09:03.439325"], ["updated_at", "2020-09-18 15:09:03.439325"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 3aa1b28e-d4c3-4b95-9815-8ff4b1029427) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbd2b8a28f8 @uri=#<URI::GID gid://split-wise-ruby/User/34>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 3.1ms | Allocations: 583)
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.2ms | Allocations: 3412)
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.474062"], ["updated_at", "2020-09-18 15:09:03.474062"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/tags/53" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 299)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$y10Cz1GW.yEW7BfKxE03iOnfWIaCeXD/NFYSQt86FJdVVI1Iknjwq"], ["created_at", "2020-09-18 15:09:03.493274"], ["updated_at", "2020-09-18 15:09:03.493274"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: faaf9c3a-442e-49fb-a9a0-662836d3dd7d) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbd2a26edc0 @uri=#<URI::GID gid://split-wise-ruby/User/35>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 583)
+Started GET "/tags/9999" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"9999"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mTag Load (3.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 9999], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (Views: 0.1ms | ActiveRecord: 6.2ms | Allocations: 568)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.520479"], ["updated_at", "2020-09-18 15:09:03.520479"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/54" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 298)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$D0YYJi/5wQImSpegYx6XZe22efEOrvY13yWmAQLYbQ.wh0XZkTI7a"], ["created_at", "2020-09-18 15:09:03.538898"], ["updated_at", "2020-09-18 15:09:03.538898"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: a87d5751-cc87-4c8d-90f9-0758f7a0fe56) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007fbd2a236600 @uri=#<URI::GID gid://split-wise-ruby/User/36>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 583)
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:03.549883"], ["updated_at", "2020-09-18 15:09:03.549883"]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/55" for 127.0.0.1 at 2020-09-18 23:09:03 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[36mTag Load (2.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Destroy (2.1ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = $1[0m  [["id", 55]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 10ms (ActiveRecord: 8.2ms | Allocations: 645)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (4.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:37.975585"], ["updated_at", "2020-09-18 15:09:37.975585"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:37.985461"], ["updated_at", "2020-09-18 15:09:37.985461"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:37.989150"], ["updated_at", "2020-09-18 15:09:37.989150"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:37.992905"], ["updated_at", "2020-09-18 15:09:37.992905"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:37.996777"], ["updated_at", "2020-09-18 15:09:37.996777"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:38.000473"], ["updated_at", "2020-09-18 15:09:38.000473"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:38.004876"], ["updated_at", "2020-09-18 15:09:38.004876"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:38.009161"], ["updated_at", "2020-09-18 15:09:38.009161"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:38.015733"], ["updated_at", "2020-09-18 15:09:38.015733"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:38.019932"], ["updated_at", "2020-09-18 15:09:38.019932"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:09:38.023984"], ["updated_at", "2020-09-18 15:09:38.023984"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 19ms (Views: 0.1ms | ActiveRecord: 14.3ms | Allocations: 817)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$hBMRg7/F4iKqjOYZL9wzmugiMQBhJw7JkP9p8MWCodHoUuHvYZ0AS"], ["created_at", "2020-09-18 15:09:38.108277"], ["updated_at", "2020-09-18 15:09:38.108277"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 0259b800-e01d-47e1-86ad-86ff146378f8) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007ff81b0b2ed8 @uri=#<URI::GID gid://split-wise-ruby/User/37>>]}
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 1550)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (3.6ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.146842"], ["updated_at", "2020-09-18 15:09:38.146842"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 20.0ms | Allocations: 3125)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$dKlC1clXjvpli8tGi7dpNegCbXmvSLSPPVpuBkcxrdiatdaubFYa2"], ["created_at", "2020-09-18 15:09:38.161660"], ["updated_at", "2020-09-18 15:09:38.161660"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: dc885879-d525-4941-bce9-53ed7a923a66) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007ff811c98e00 @uri=#<URI::GID gid://split-wise-ruby/User/38>>]}
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 583)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#create as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 2.3ms | Allocations: 2110)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 298)
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.195490"], ["updated_at", "2020-09-18 15:09:38.195490"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.199996"], ["updated_at", "2020-09-18 15:09:38.199996"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.204191"], ["updated_at", "2020-09-18 15:09:38.204191"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.208088"], ["updated_at", "2020-09-18 15:09:38.208088"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.211695"], ["updated_at", "2020-09-18 15:09:38.211695"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.215378"], ["updated_at", "2020-09-18 15:09:38.215378"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.219076"], ["updated_at", "2020-09-18 15:09:38.219076"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.222657"], ["updated_at", "2020-09-18 15:09:38.222657"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.226126"], ["updated_at", "2020-09-18 15:09:38.226126"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.229889"], ["updated_at", "2020-09-18 15:09:38.229889"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.233535"], ["updated_at", "2020-09-18 15:09:38.233535"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$BCmde75QYeV6YBPVpuRLTOZxYN47d/MWYjSaMClffTreOG0xTzj1C"], ["created_at", "2020-09-18 15:09:38.241781"], ["updated_at", "2020-09-18 15:09:38.241781"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: d5b643a7-e6ff-45db-bef1-3c1bda093415) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007ff8161f9350 @uri=#<URI::GID gid://split-wise-ruby/User/39>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 583)
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mTag Load (4.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+Completed 200 OK in 10ms (Views: 2.3ms | ActiveRecord: 6.5ms | Allocations: 1523)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.278049"], ["updated_at", "2020-09-18 15:09:38.278049"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/tags/68" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 298)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$aiGPdUkgYZGRU/4UduHdBe6SERSJYWeANvQAH3nICtHnGl6ERIqfa"], ["created_at", "2020-09-18 15:09:38.298739"], ["updated_at", "2020-09-18 15:09:38.298739"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 54c3c182-015f-4459-a7bc-95523d3402c0) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007ff8140c14a8 @uri=#<URI::GID gid://split-wise-ruby/User/40>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 583)
+Started GET "/tags/9999" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"9999"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[36mTag Load (2.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 9999], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 4.5ms | Allocations: 554)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.325318"], ["updated_at", "2020-09-18 15:09:38.325318"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/69" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 298)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$VrEFGqDk.aFRSZl6cjyi5urBQZNdiaKlUZmEPYs4hW.KZcw/s7CEi"], ["created_at", "2020-09-18 15:09:38.345245"], ["updated_at", "2020-09-18 15:09:38.345245"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 76da85b9-2ad1-4d22-b1b5-2af05f2101cd) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007ff811c90de0 @uri=#<URI::GID gid://split-wise-ruby/User/41>>]}
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 583)
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:09:38.356451"], ["updated_at", "2020-09-18 15:09:38.356451"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/70" for 127.0.0.1 at 2020-09-18 23:09:38 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[36mTag Load (2.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Destroy (1.7ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = $1[0m  [["id", 70]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (ActiveRecord: 8.1ms | Allocations: 629)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (6.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:42.990851"], ["updated_at", "2020-09-18 15:10:42.990851"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.002774"], ["updated_at", "2020-09-18 15:10:43.002774"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.006875"], ["updated_at", "2020-09-18 15:10:43.006875"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.011083"], ["updated_at", "2020-09-18 15:10:43.011083"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.015427"], ["updated_at", "2020-09-18 15:10:43.015427"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.019664"], ["updated_at", "2020-09-18 15:10:43.019664"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.023701"], ["updated_at", "2020-09-18 15:10:43.023701"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.028067"], ["updated_at", "2020-09-18 15:10:43.028067"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.032230"], ["updated_at", "2020-09-18 15:10:43.032230"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.036518"], ["updated_at", "2020-09-18 15:10:43.036518"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:10:43.040729"], ["updated_at", "2020-09-18 15:10:43.040729"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 19ms (Views: 0.1ms | ActiveRecord: 14.3ms | Allocations: 817)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$Wcl80ZdXNBkFDBaLxSPNF.elcNE5BTLR6VJzcVLwnjcQpgUMNHE3W"], ["created_at", "2020-09-18 15:10:43.127266"], ["updated_at", "2020-09-18 15:10:43.127266"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: a84a514d-4bb1-4000-a4f1-f089143ad54a) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007f7ff22b9930 @uri=#<URI::GID gid://split-wise-ruby/User/42>>]}
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 1550)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#create as HTML
+  Parameters: {"name"=>"test"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (5.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:10:43.166407"], ["updated_at", "2020-09-18 15:10:43.166407"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 21.6ms | Allocations: 3129)
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$QJOOlK2dwa79sjk01fK6vOC0wmltp3s73s3cXLW2f9WHiIcGb8VJe"], ["created_at", "2020-09-18 15:10:43.183179"], ["updated_at", "2020-09-18 15:10:43.183179"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 6875056b-15fa-4fbf-8f81-3a9e76a20858) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007f7ff425f168 @uri=#<URI::GID gid://split-wise-ruby/User/43>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.4ms | Allocations: 583)
+Started POST "/tags" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#create as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2102)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.1ms | ActiveRecord: 3.0ms | Allocations: 298)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:10:43.216597"], ["updated_at", "2020-09-18 15:10:43.216597"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:10:43.220604"], ["updated_at", "2020-09-18 15:10:43.220604"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:10:43.224688"], ["updated_at", "2020-09-18 15:10:43.224688"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:10:43.228440"], ["updated_at", "2020-09-18 15:10:43.228440"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:10:43.231838"], ["updated_at", "2020-09-18 15:10:43.231838"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:10:43.235358"], ["updated_at", "2020-09-18 15:10:43.235358"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:10:43.238861"], ["updated_at", "2020-09-18 15:10:43.238861"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:10:43.242726"], ["updated_at", "2020-09-18 15:10:43.242726"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:10:43.246359"], ["updated_at", "2020-09-18 15:10:43.246359"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:10:43.250209"], ["updated_at", "2020-09-18 15:10:43.250209"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:10:43.253731"], ["updated_at", "2020-09-18 15:10:43.253731"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$zovLqjsEoAul1Dj82HVBf.3iUSgUfGrMeHwlybpEkUh5g7hFxgT9u"], ["created_at", "2020-09-18 15:10:43.261610"], ["updated_at", "2020-09-18 15:10:43.261610"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 1d02c63f-98dd-4ce4-bfff-977d8cc49183) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007f7ff3163788 @uri=#<URI::GID gid://split-wise-ruby/User/44>>]}
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.5ms | Allocations: 583)
+Started GET "/tags" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mTag Load (4.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+Completed 200 OK in 11ms (Views: 2.7ms | ActiveRecord: 7.6ms | Allocations: 1531)
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:10:43.299946"], ["updated_at", "2020-09-18 15:10:43.299946"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/tags/83" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"83"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 298)
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$uzNf01RaeUsQqOGIKuSEt.P.rQ11ski1lojTJgGhUXb7eFoogod3."], ["created_at", "2020-09-18 15:10:43.319335"], ["updated_at", "2020-09-18 15:10:43.319335"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: f3a1d233-9f5d-495b-ae2e-1b1b0248eb5c) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007f7ff296bee0 @uri=#<URI::GID gid://split-wise-ruby/User/45>>]}
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 583)
+Started GET "/tags/9999" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"9999"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mTag Load (2.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 9999], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 4.8ms | Allocations: 550)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:10:43.345150"], ["updated_at", "2020-09-18 15:10:43.345150"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/84" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"84"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 298)
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "spec_test_helper@qq.com"], ["password_digest", "$2a$04$6c5uGHFEe69/hC8SDJ8qeugcv6zRu9t7O0FSM/O2/.9oDHEztQD5O"], ["created_at", "2020-09-18 15:10:43.363580"], ["updated_at", "2020-09-18 15:10:43.363580"]]
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 893a1431-9944-4b96-b516-1de635daf7c8) to Test(mailers) with arguments: "UserMailer", "welcome_email", "deliver_now", {:args=>[#<GlobalID:0x00007f7feeb07870 @uri=#<URI::GID gid://split-wise-ruby/User/46>>]}
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/sessions" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"spec_test_helper@qq.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spec_test_helper@qq.com"], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.9ms | Allocations: 583)
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:10:43.374966"], ["updated_at", "2020-09-18 15:10:43.374966"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/tags/85" for 127.0.0.1 at 2020-09-18 23:10:43 +0800
+Processing by TagsController#destroy as HTML
+  Parameters: {"id"=>"85"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[36mTag Load (1.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Destroy (2.1ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = $1[0m  [["id", 85]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (ActiveRecord: 7.6ms | Allocations: 630)
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m

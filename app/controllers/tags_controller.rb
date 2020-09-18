@@ -1,6 +1,14 @@
 class TagsController < ApplicationController
   before_action :must_sign_in
 
+  def index
+    render_resources Tag.page(params[:page])
+  end
+
+  def show
+    render_resource Tag.find(params[:id])
+  end
+
   def create
     render_resource Tag.create create_params
   end
@@ -11,6 +19,10 @@ class TagsController < ApplicationController
   end
 
   private
+
+  def render_resources(resources)
+    render json: {resources: resources}
+  end
 
   def create_params
     params.permit(:name)
