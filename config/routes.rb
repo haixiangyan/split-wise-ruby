@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   resources :users
   resources :records
   resources :tags
-  resources :taggings
+  resources :taggings, except: [:update]
   resources :sessions, only: [:create]
 end
