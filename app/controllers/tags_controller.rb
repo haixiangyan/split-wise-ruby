@@ -13,6 +13,12 @@ class TagsController < ApplicationController
     render_resource Tag.create create_params
   end
 
+  def update
+    tag = Tag.find(params[:id])
+    tag.update create_params
+    render_resource tag
+  end
+
   def destroy
     tag = Tag.find params[:id]
     head tag.destroy ? :ok : :bad_request
