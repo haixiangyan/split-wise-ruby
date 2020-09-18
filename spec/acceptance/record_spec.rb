@@ -4,11 +4,11 @@ require 'rspec_api_documentation/dsl'
 resource "Records" do
   let(:record) { Record.create! amount: 10000, category: 'income' }
   let(:id) { record.id }
+  let(:amount) { 10000 }
+  let(:category) { 'income' }
+  let(:note) { '吃饭' }
 
   post "/records" do
-    let(:amount) { 10000 }
-    let(:category) { 'income' }
-    let(:note) { '吃饭' }
     parameter :amount, '金额', type: :integer, required: true
     parameter :category, '类型: 1 outgoings | 2 income', type: :string, required: true
     parameter :note, '备注', type: :string
