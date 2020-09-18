@@ -13,6 +13,11 @@ resource "Taggings" do
       Tagging.create! record: record, tag: Tag.create!(name: "test#{n}")
     end
   }
+  let(:create_taggings) {
+    tagging
+    taggings
+    nil
+  }
 
   post '/taggings' do
     parameter :tag_id, '标签 ID', type: :number, required: true
@@ -36,6 +41,7 @@ resource "Taggings" do
     parameter :page, '页码', type: :integer
     let(:page) { 1 }
     example "获取所有标记" do
+      create_taggings
       sign_in
       do_request
       expect(status).to eq 200
