@@ -15,6 +15,10 @@ zh-CN:
   activerecord:
     errors:
       models:
+        tag:
+          attributes:
+            name:
+              blank: 标签名不能为空
         record:
           attributes:
             amount:
