@@ -10340,3 +10340,1100 @@ Processing by UsersController#create as HTML
 Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 7.1ms | Allocations: 1220)
   [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
   [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (438.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "split_wise_ruby_test"[0m
+  [1m[35m (2116.9ms)[0m  [1m[35mCREATE DATABASE "split_wise_ruby_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (5.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "records" CASCADE[0m
+  [1m[35m (114.4ms)[0m  [1m[35mCREATE TABLE "records" ("id" bigserial primary key, "amount" integer NOT NULL, "category" smallint NOT NULL, "note" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "taggings" CASCADE[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "taggings" ("id" bigserial primary key, "tag_id" bigint NOT NULL, "record_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_record_id" ON "taggings"  ("record_id")[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_tag_id" ON "taggings"  ("tag_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "tags" CASCADE[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying(20), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (21.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200918153819)[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200801111952),
+(20200916154242),
+(20200918144100);
+
+[0m
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (6.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-09-18 15:49:59.602157"], ["updated_at", "2020-09-18 15:49:59.602157"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "b2d76ba71abe5070c292c4834c715691685da925"], ["created_at", "2020-09-18 15:49:59.623896"], ["updated_at", "2020-09-18 15:49:59.623896"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (7.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.787593"], ["updated_at", "2020-09-18 15:49:59.787593"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.801730"], ["updated_at", "2020-09-18 15:49:59.801730"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.806285"], ["updated_at", "2020-09-18 15:49:59.806285"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.811376"], ["updated_at", "2020-09-18 15:49:59.811376"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.6ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.816410"], ["updated_at", "2020-09-18 15:49:59.816410"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (6.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.821685"], ["updated_at", "2020-09-18 15:49:59.821685"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.833056"], ["updated_at", "2020-09-18 15:49:59.833056"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.838355"], ["updated_at", "2020-09-18 15:49:59.838355"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.842860"], ["updated_at", "2020-09-18 15:49:59.842860"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.846850"], ["updated_at", "2020-09-18 15:49:59.846850"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:49:59.850418"], ["updated_at", "2020-09-18 15:49:59.850418"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (6.5ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:49:59.876022"], ["updated_at", "2020-09-18 15:49:59.876022"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:49:59.886003"], ["updated_at", "2020-09-18 15:49:59.886003"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:49:59.889789"], ["updated_at", "2020-09-18 15:49:59.889789"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:49:59.894001"], ["updated_at", "2020-09-18 15:49:59.894001"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:49:59.897967"], ["updated_at", "2020-09-18 15:49:59.897967"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:49:59.901530"], ["updated_at", "2020-09-18 15:49:59.901530"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:49:59.905176"], ["updated_at", "2020-09-18 15:49:59.905176"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:49:59.908939"], ["updated_at", "2020-09-18 15:49:59.908939"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:49:59.912983"], ["updated_at", "2020-09-18 15:49:59.912983"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:49:59.917210"], ["updated_at", "2020-09-18 15:49:59.917210"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:49:59.921230"], ["updated_at", "2020-09-18 15:49:59.921230"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:49:59.948255"], ["updated_at", "2020-09-18 15:49:59.948255"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (4.8ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.771365"], ["updated_at", "2020-09-18 15:50:27.771365"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.782677"], ["updated_at", "2020-09-18 15:50:27.782677"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.787298"], ["updated_at", "2020-09-18 15:50:27.787298"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.791884"], ["updated_at", "2020-09-18 15:50:27.791884"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.796198"], ["updated_at", "2020-09-18 15:50:27.796198"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.801054"], ["updated_at", "2020-09-18 15:50:27.801054"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.805697"], ["updated_at", "2020-09-18 15:50:27.805697"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.810121"], ["updated_at", "2020-09-18 15:50:27.810121"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.814418"], ["updated_at", "2020-09-18 15:50:27.814418"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.818880"], ["updated_at", "2020-09-18 15:50:27.818880"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:50:27.823407"], ["updated_at", "2020-09-18 15:50:27.823407"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (4.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:50:27.847515"], ["updated_at", "2020-09-18 15:50:27.847515"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:50:27.855387"], ["updated_at", "2020-09-18 15:50:27.855387"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:50:27.859340"], ["updated_at", "2020-09-18 15:50:27.859340"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:50:27.863604"], ["updated_at", "2020-09-18 15:50:27.863604"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:50:27.868037"], ["updated_at", "2020-09-18 15:50:27.868037"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:50:27.872847"], ["updated_at", "2020-09-18 15:50:27.872847"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:50:27.877350"], ["updated_at", "2020-09-18 15:50:27.877350"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:50:27.882042"], ["updated_at", "2020-09-18 15:50:27.882042"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:50:27.886558"], ["updated_at", "2020-09-18 15:50:27.886558"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:50:27.890821"], ["updated_at", "2020-09-18 15:50:27.890821"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:50:27.894979"], ["updated_at", "2020-09-18 15:50:27.894979"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:50:27.916362"], ["updated_at", "2020-09-18 15:50:27.916362"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (355.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "split_wise_ruby_test"[0m
+  [1m[35m (2171.5ms)[0m  [1m[35mCREATE DATABASE "split_wise_ruby_test" ENCODING = 'unicode'[0m
+  [1m[35m (69.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (6.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-09-18 15:52:55.832239"], ["updated_at", "2020-09-18 15:52:55.832239"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "da39a3ee5e6b4b0d3255bfef95601890afd80709"], ["created_at", "2020-09-18 15:52:55.845688"], ["updated_at", "2020-09-18 15:52:55.845688"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (26.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3109561252392376845)[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200801111952)
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (25.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (3.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200801111952"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRecords (20200916154242)
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "records" ("id" bigserial primary key, "amount" integer NOT NULL, "category" smallint NOT NULL, "note" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200916154242"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTags (20200918144100)
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying(20), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200918144100"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTaggings (20200918153819)
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "taggings" ("id" bigserial primary key, "tag_id" bigint NOT NULL, "record_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_tag_id" ON "taggings"  ("tag_id")[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_record_id" ON "taggings"  ("record_id")[0m
+  [1m[36mprimary::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200918153819"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(3109561252392376845)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (385.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "split_wise_ruby_test"[0m
+  [1m[35m (1530.7ms)[0m  [1m[35mCREATE DATABASE "split_wise_ruby_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (4.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "records" CASCADE[0m
+  [1m[35m (64.1ms)[0m  [1m[35mCREATE TABLE "records" ("id" bigserial primary key, "amount" integer NOT NULL, "category" smallint NOT NULL, "note" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "taggings" CASCADE[0m
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "taggings" ("id" bigserial primary key, "tag_id" bigint NOT NULL, "record_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_record_id" ON "taggings"  ("record_id")[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE  INDEX  "index_taggings_on_tag_id" ON "taggings"  ("tag_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "tags" CASCADE[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "tags" ("id" bigserial primary key, "name" character varying(20), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200918153819)[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200801111952),
+(20200916154242),
+(20200918144100);
+
+[0m
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-09-18 15:53:12.314213"], ["updated_at", "2020-09-18 15:53:12.314213"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "b2d76ba71abe5070c292c4834c715691685da925"], ["created_at", "2020-09-18 15:53:12.329558"], ["updated_at", "2020-09-18 15:53:12.329558"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (6.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.463643"], ["updated_at", "2020-09-18 15:53:12.463643"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.474216"], ["updated_at", "2020-09-18 15:53:12.474216"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.478429"], ["updated_at", "2020-09-18 15:53:12.478429"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.482405"], ["updated_at", "2020-09-18 15:53:12.482405"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.486378"], ["updated_at", "2020-09-18 15:53:12.486378"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.490551"], ["updated_at", "2020-09-18 15:53:12.490551"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.494894"], ["updated_at", "2020-09-18 15:53:12.494894"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.499351"], ["updated_at", "2020-09-18 15:53:12.499351"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.503834"], ["updated_at", "2020-09-18 15:53:12.503834"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.508171"], ["updated_at", "2020-09-18 15:53:12.508171"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:53:12.512847"], ["updated_at", "2020-09-18 15:53:12.512847"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (5.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:53:12.536061"], ["updated_at", "2020-09-18 15:53:12.536061"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:53:12.544997"], ["updated_at", "2020-09-18 15:53:12.544997"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:53:12.549042"], ["updated_at", "2020-09-18 15:53:12.549042"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:53:12.552582"], ["updated_at", "2020-09-18 15:53:12.552582"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:53:12.556366"], ["updated_at", "2020-09-18 15:53:12.556366"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:53:12.560220"], ["updated_at", "2020-09-18 15:53:12.560220"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:53:12.564256"], ["updated_at", "2020-09-18 15:53:12.564256"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:53:12.568166"], ["updated_at", "2020-09-18 15:53:12.568166"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:53:12.571596"], ["updated_at", "2020-09-18 15:53:12.571596"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:53:12.575469"], ["updated_at", "2020-09-18 15:53:12.575469"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:53:12.579210"], ["updated_at", "2020-09-18 15:53:12.579210"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.7ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:53:12.600107"], ["updated_at", "2020-09-18 15:53:12.600107"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (5.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.854304"], ["updated_at", "2020-09-18 15:55:10.854304"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.864911"], ["updated_at", "2020-09-18 15:55:10.864911"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.6ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.869843"], ["updated_at", "2020-09-18 15:55:10.869843"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.874672"], ["updated_at", "2020-09-18 15:55:10.874672"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.878976"], ["updated_at", "2020-09-18 15:55:10.878976"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.883497"], ["updated_at", "2020-09-18 15:55:10.883497"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.887996"], ["updated_at", "2020-09-18 15:55:10.887996"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.892876"], ["updated_at", "2020-09-18 15:55:10.892876"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.897328"], ["updated_at", "2020-09-18 15:55:10.897328"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.901781"], ["updated_at", "2020-09-18 15:55:10.901781"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:10.906342"], ["updated_at", "2020-09-18 15:55:10.906342"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.6ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:55:10.929341"], ["updated_at", "2020-09-18 15:55:10.929341"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:55:10.936617"], ["updated_at", "2020-09-18 15:55:10.936617"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:55:10.940761"], ["updated_at", "2020-09-18 15:55:10.940761"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:55:10.944733"], ["updated_at", "2020-09-18 15:55:10.944733"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:55:10.948961"], ["updated_at", "2020-09-18 15:55:10.948961"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:55:10.953068"], ["updated_at", "2020-09-18 15:55:10.953068"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:55:10.957476"], ["updated_at", "2020-09-18 15:55:10.957476"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:55:10.961802"], ["updated_at", "2020-09-18 15:55:10.961802"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:55:10.966224"], ["updated_at", "2020-09-18 15:55:10.966224"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:55:10.970574"], ["updated_at", "2020-09-18 15:55:10.970574"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:55:10.974735"], ["updated_at", "2020-09-18 15:55:10.974735"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (5.6ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.902659"], ["updated_at", "2020-09-18 15:55:42.902659"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.914583"], ["updated_at", "2020-09-18 15:55:42.914583"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.918918"], ["updated_at", "2020-09-18 15:55:42.918918"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.922746"], ["updated_at", "2020-09-18 15:55:42.922746"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.926883"], ["updated_at", "2020-09-18 15:55:42.926883"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.930849"], ["updated_at", "2020-09-18 15:55:42.930849"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.934917"], ["updated_at", "2020-09-18 15:55:42.934917"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.938701"], ["updated_at", "2020-09-18 15:55:42.938701"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.942501"], ["updated_at", "2020-09-18 15:55:42.942501"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.946452"], ["updated_at", "2020-09-18 15:55:42.946452"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:55:42.950442"], ["updated_at", "2020-09-18 15:55:42.950442"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.6ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:55:42.972029"], ["updated_at", "2020-09-18 15:55:42.972029"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:55:42.979332"], ["updated_at", "2020-09-18 15:55:42.979332"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:55:42.983926"], ["updated_at", "2020-09-18 15:55:42.983926"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:55:42.988360"], ["updated_at", "2020-09-18 15:55:42.988360"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:55:42.992893"], ["updated_at", "2020-09-18 15:55:42.992893"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:55:42.997431"], ["updated_at", "2020-09-18 15:55:42.997431"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:55:43.002040"], ["updated_at", "2020-09-18 15:55:43.002040"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:55:43.006522"], ["updated_at", "2020-09-18 15:55:43.006522"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:55:43.010936"], ["updated_at", "2020-09-18 15:55:43.010936"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:55:43.015321"], ["updated_at", "2020-09-18 15:55:43.015321"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:55:43.019885"], ["updated_at", "2020-09-18 15:55:43.019885"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (6.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.812699"], ["updated_at", "2020-09-18 15:56:13.812699"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.824289"], ["updated_at", "2020-09-18 15:56:13.824289"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.828042"], ["updated_at", "2020-09-18 15:56:13.828042"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.832023"], ["updated_at", "2020-09-18 15:56:13.832023"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.835697"], ["updated_at", "2020-09-18 15:56:13.835697"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.839150"], ["updated_at", "2020-09-18 15:56:13.839150"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.842670"], ["updated_at", "2020-09-18 15:56:13.842670"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.846252"], ["updated_at", "2020-09-18 15:56:13.846252"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.849687"], ["updated_at", "2020-09-18 15:56:13.849687"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.853034"], ["updated_at", "2020-09-18 15:56:13.853034"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:13.856428"], ["updated_at", "2020-09-18 15:56:13.856428"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:56:13.876895"], ["updated_at", "2020-09-18 15:56:13.876895"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:56:13.882957"], ["updated_at", "2020-09-18 15:56:13.882957"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:56:13.886786"], ["updated_at", "2020-09-18 15:56:13.886786"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.8ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:56:13.890328"], ["updated_at", "2020-09-18 15:56:13.890328"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:56:13.893885"], ["updated_at", "2020-09-18 15:56:13.893885"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.8ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:56:13.897511"], ["updated_at", "2020-09-18 15:56:13.897511"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:56:13.901112"], ["updated_at", "2020-09-18 15:56:13.901112"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:56:13.904632"], ["updated_at", "2020-09-18 15:56:13.904632"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:56:13.908973"], ["updated_at", "2020-09-18 15:56:13.908973"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:56:13.913398"], ["updated_at", "2020-09-18 15:56:13.913398"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:56:13.917836"], ["updated_at", "2020-09-18 15:56:13.917836"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (4.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.234122"], ["updated_at", "2020-09-18 15:56:32.234122"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.244433"], ["updated_at", "2020-09-18 15:56:32.244433"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.248676"], ["updated_at", "2020-09-18 15:56:32.248676"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.252715"], ["updated_at", "2020-09-18 15:56:32.252715"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.256868"], ["updated_at", "2020-09-18 15:56:32.256868"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.261068"], ["updated_at", "2020-09-18 15:56:32.261068"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.265060"], ["updated_at", "2020-09-18 15:56:32.265060"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.269008"], ["updated_at", "2020-09-18 15:56:32.269008"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.273039"], ["updated_at", "2020-09-18 15:56:32.273039"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.277250"], ["updated_at", "2020-09-18 15:56:32.277250"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:32.281866"], ["updated_at", "2020-09-18 15:56:32.281866"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (5.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:56:32.305888"], ["updated_at", "2020-09-18 15:56:32.305888"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:56:32.314876"], ["updated_at", "2020-09-18 15:56:32.314876"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:56:32.319289"], ["updated_at", "2020-09-18 15:56:32.319289"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:56:32.323626"], ["updated_at", "2020-09-18 15:56:32.323626"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:56:32.327635"], ["updated_at", "2020-09-18 15:56:32.327635"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:56:32.331673"], ["updated_at", "2020-09-18 15:56:32.331673"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:56:32.335798"], ["updated_at", "2020-09-18 15:56:32.335798"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:56:32.339800"], ["updated_at", "2020-09-18 15:56:32.339800"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:56:32.344211"], ["updated_at", "2020-09-18 15:56:32.344211"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:56:32.348432"], ["updated_at", "2020-09-18 15:56:32.348432"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:56:32.352722"], ["updated_at", "2020-09-18 15:56:32.352722"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.6ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:56:32.371443"], ["updated_at", "2020-09-18 15:56:32.371443"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (4.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.923422"], ["updated_at", "2020-09-18 15:56:44.923422"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.933036"], ["updated_at", "2020-09-18 15:56:44.933036"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.937402"], ["updated_at", "2020-09-18 15:56:44.937402"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.6ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.941447"], ["updated_at", "2020-09-18 15:56:44.941447"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.946523"], ["updated_at", "2020-09-18 15:56:44.946523"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.951716"], ["updated_at", "2020-09-18 15:56:44.951716"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.956466"], ["updated_at", "2020-09-18 15:56:44.956466"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.961694"], ["updated_at", "2020-09-18 15:56:44.961694"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.967572"], ["updated_at", "2020-09-18 15:56:44.967572"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.972834"], ["updated_at", "2020-09-18 15:56:44.972834"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:44.978265"], ["updated_at", "2020-09-18 15:56:44.978265"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.7ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:56:45.004164"], ["updated_at", "2020-09-18 15:56:45.004164"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:56:45.012348"], ["updated_at", "2020-09-18 15:56:45.012348"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:56:45.017143"], ["updated_at", "2020-09-18 15:56:45.017143"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:56:45.021031"], ["updated_at", "2020-09-18 15:56:45.021031"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:56:45.025053"], ["updated_at", "2020-09-18 15:56:45.025053"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:56:45.029861"], ["updated_at", "2020-09-18 15:56:45.029861"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:56:45.034421"], ["updated_at", "2020-09-18 15:56:45.034421"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:56:45.038463"], ["updated_at", "2020-09-18 15:56:45.038463"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:56:45.042533"], ["updated_at", "2020-09-18 15:56:45.042533"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:56:45.047342"], ["updated_at", "2020-09-18 15:56:45.047342"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:56:45.051634"], ["updated_at", "2020-09-18 15:56:45.051634"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.4ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:56:45.073162"], ["updated_at", "2020-09-18 15:56:45.073162"]]
+  [1m[35m (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (6.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.403256"], ["updated_at", "2020-09-18 15:56:59.403256"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.415442"], ["updated_at", "2020-09-18 15:56:59.415442"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.419299"], ["updated_at", "2020-09-18 15:56:59.419299"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.423047"], ["updated_at", "2020-09-18 15:56:59.423047"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.426841"], ["updated_at", "2020-09-18 15:56:59.426841"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.430523"], ["updated_at", "2020-09-18 15:56:59.430523"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.434119"], ["updated_at", "2020-09-18 15:56:59.434119"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.438199"], ["updated_at", "2020-09-18 15:56:59.438199"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.442132"], ["updated_at", "2020-09-18 15:56:59.442132"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.446096"], ["updated_at", "2020-09-18 15:56:59.446096"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:56:59.449903"], ["updated_at", "2020-09-18 15:56:59.449903"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.5ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:56:59.471531"], ["updated_at", "2020-09-18 15:56:59.471531"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:56:59.478133"], ["updated_at", "2020-09-18 15:56:59.478133"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:56:59.482062"], ["updated_at", "2020-09-18 15:56:59.482062"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:56:59.485809"], ["updated_at", "2020-09-18 15:56:59.485809"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:56:59.489403"], ["updated_at", "2020-09-18 15:56:59.489403"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:56:59.492987"], ["updated_at", "2020-09-18 15:56:59.492987"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:56:59.496794"], ["updated_at", "2020-09-18 15:56:59.496794"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:56:59.500426"], ["updated_at", "2020-09-18 15:56:59.500426"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:56:59.504062"], ["updated_at", "2020-09-18 15:56:59.504062"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:56:59.507843"], ["updated_at", "2020-09-18 15:56:59.507843"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:56:59.511686"], ["updated_at", "2020-09-18 15:56:59.511686"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["note", "hello"], ["created_at", "2020-09-18 15:56:59.529875"], ["updated_at", "2020-09-18 15:56:59.529875"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (5.6ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.355241"], ["updated_at", "2020-09-18 15:57:14.355241"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.365961"], ["updated_at", "2020-09-18 15:57:14.365961"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.370052"], ["updated_at", "2020-09-18 15:57:14.370052"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.373798"], ["updated_at", "2020-09-18 15:57:14.373798"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.378203"], ["updated_at", "2020-09-18 15:57:14.378203"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.382563"], ["updated_at", "2020-09-18 15:57:14.382563"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.386560"], ["updated_at", "2020-09-18 15:57:14.386560"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.390512"], ["updated_at", "2020-09-18 15:57:14.390512"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.394839"], ["updated_at", "2020-09-18 15:57:14.394839"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.398819"], ["updated_at", "2020-09-18 15:57:14.398819"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:57:14.402702"], ["updated_at", "2020-09-18 15:57:14.402702"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:57:14.423636"], ["updated_at", "2020-09-18 15:57:14.423636"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:57:14.431038"], ["updated_at", "2020-09-18 15:57:14.431038"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:57:14.434838"], ["updated_at", "2020-09-18 15:57:14.434838"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:57:14.438663"], ["updated_at", "2020-09-18 15:57:14.438663"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:57:14.442910"], ["updated_at", "2020-09-18 15:57:14.442910"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:57:14.446807"], ["updated_at", "2020-09-18 15:57:14.446807"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:57:14.450897"], ["updated_at", "2020-09-18 15:57:14.450897"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:57:14.454804"], ["updated_at", "2020-09-18 15:57:14.454804"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:57:14.458887"], ["updated_at", "2020-09-18 15:57:14.458887"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:57:14.462874"], ["updated_at", "2020-09-18 15:57:14.462874"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:57:14.466901"], ["updated_at", "2020-09-18 15:57:14.466901"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["note", "hello"], ["created_at", "2020-09-18 15:57:14.486346"], ["updated_at", "2020-09-18 15:57:14.486346"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (3.5ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.918044"], ["updated_at", "2020-09-18 15:58:44.918044"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.926308"], ["updated_at", "2020-09-18 15:58:44.926308"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.930463"], ["updated_at", "2020-09-18 15:58:44.930463"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.934544"], ["updated_at", "2020-09-18 15:58:44.934544"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.938512"], ["updated_at", "2020-09-18 15:58:44.938512"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.942516"], ["updated_at", "2020-09-18 15:58:44.942516"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.946349"], ["updated_at", "2020-09-18 15:58:44.946349"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.950477"], ["updated_at", "2020-09-18 15:58:44.950477"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.954711"], ["updated_at", "2020-09-18 15:58:44.954711"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.958765"], ["updated_at", "2020-09-18 15:58:44.958765"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 15:58:44.962703"], ["updated_at", "2020-09-18 15:58:44.962703"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.8ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 15:58:44.985291"], ["updated_at", "2020-09-18 15:58:44.985291"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 15:58:44.992834"], ["updated_at", "2020-09-18 15:58:44.992834"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 15:58:44.996980"], ["updated_at", "2020-09-18 15:58:44.996980"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 15:58:45.001478"], ["updated_at", "2020-09-18 15:58:45.001478"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 15:58:45.005574"], ["updated_at", "2020-09-18 15:58:45.005574"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 15:58:45.009658"], ["updated_at", "2020-09-18 15:58:45.009658"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 15:58:45.013884"], ["updated_at", "2020-09-18 15:58:45.013884"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 15:58:45.017852"], ["updated_at", "2020-09-18 15:58:45.017852"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 15:58:45.022091"], ["updated_at", "2020-09-18 15:58:45.022091"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 15:58:45.025996"], ["updated_at", "2020-09-18 15:58:45.025996"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 15:58:45.030012"], ["updated_at", "2020-09-18 15:58:45.030012"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 15:58:45.051430"], ["updated_at", "2020-09-18 15:58:45.051430"]]
+  [1m[35m (2.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["note", "hello"], ["created_at", "2020-09-18 15:58:45.058038"], ["updated_at", "2020-09-18 15:58:45.058038"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTagging Create (10.1ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "record_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["tag_id", 103], ["record_id", 102], ["created_at", "2020-09-18 15:58:45.077397"], ["updated_at", "2020-09-18 15:58:45.077397"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mRecord Load (5.2ms)[0m  [1m[34mSELECT "records".* FROM "records" INNER JOIN "taggings" ON "records"."id" = "taggings"."record_id" WHERE "taggings"."tag_id" = $1 ORDER BY "records"."id" ASC LIMIT $2[0m  [["tag_id", 103], ["LIMIT", 1]]
+  [1m[36mTag Load (4.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."record_id" = $1 ORDER BY "tags"."id" ASC LIMIT $2[0m  [["record_id", 102], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (3.7ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.908572"], ["updated_at", "2020-09-18 16:01:27.908572"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.916920"], ["updated_at", "2020-09-18 16:01:27.916920"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.920696"], ["updated_at", "2020-09-18 16:01:27.920696"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.924236"], ["updated_at", "2020-09-18 16:01:27.924236"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.927727"], ["updated_at", "2020-09-18 16:01:27.927727"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.931337"], ["updated_at", "2020-09-18 16:01:27.931337"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.934969"], ["updated_at", "2020-09-18 16:01:27.934969"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.938493"], ["updated_at", "2020-09-18 16:01:27.938493"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.942393"], ["updated_at", "2020-09-18 16:01:27.942393"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.946096"], ["updated_at", "2020-09-18 16:01:27.946096"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:27.949900"], ["updated_at", "2020-09-18 16:01:27.949900"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 16:01:27.968941"], ["updated_at", "2020-09-18 16:01:27.968941"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 16:01:27.975126"], ["updated_at", "2020-09-18 16:01:27.975126"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (0.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 16:01:27.978707"], ["updated_at", "2020-09-18 16:01:27.978707"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 16:01:27.982507"], ["updated_at", "2020-09-18 16:01:27.982507"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 16:01:27.986177"], ["updated_at", "2020-09-18 16:01:27.986177"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 16:01:27.990264"], ["updated_at", "2020-09-18 16:01:27.990264"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 16:01:27.993890"], ["updated_at", "2020-09-18 16:01:27.993890"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 16:01:27.997710"], ["updated_at", "2020-09-18 16:01:27.997710"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 16:01:28.001464"], ["updated_at", "2020-09-18 16:01:28.001464"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 16:01:28.005398"], ["updated_at", "2020-09-18 16:01:28.005398"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 16:01:28.008979"], ["updated_at", "2020-09-18 16:01:28.008979"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.3ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2020-09-18 16:01:28.027866"], ["updated_at", "2020-09-18 16:01:28.027866"]]
+  [1m[35m (1.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["note", "hello"], ["created_at", "2020-09-18 16:01:28.032295"], ["updated_at", "2020-09-18 16:01:28.032295"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTagging Create (3.0ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "record_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["tag_id", 115], ["record_id", 114], ["created_at", "2020-09-18 16:01:28.049099"], ["updated_at", "2020-09-18 16:01:28.049099"]]
+  [1m[35m (0.9ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mRecord Load (5.5ms)[0m  [1m[34mSELECT "records".* FROM "records" INNER JOIN "taggings" ON "records"."id" = "taggings"."record_id" WHERE "taggings"."tag_id" = $1 ORDER BY "records"."id" ASC LIMIT $2[0m  [["tag_id", 115], ["LIMIT", 1]]
+  [1m[36mTag Load (3.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."record_id" = $1 ORDER BY "tags"."id" ASC LIMIT $2[0m  [["record_id", 114], ["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (4.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.427241"], ["updated_at", "2020-09-18 16:01:39.427241"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.436588"], ["updated_at", "2020-09-18 16:01:39.436588"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.440580"], ["updated_at", "2020-09-18 16:01:39.440580"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.444483"], ["updated_at", "2020-09-18 16:01:39.444483"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.448412"], ["updated_at", "2020-09-18 16:01:39.448412"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.452749"], ["updated_at", "2020-09-18 16:01:39.452749"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.456712"], ["updated_at", "2020-09-18 16:01:39.456712"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.460613"], ["updated_at", "2020-09-18 16:01:39.460613"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.464608"], ["updated_at", "2020-09-18 16:01:39.464608"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.468588"], ["updated_at", "2020-09-18 16:01:39.468588"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.1ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.472589"], ["updated_at", "2020-09-18 16:01:39.472589"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (3.8ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 16:01:39.495013"], ["updated_at", "2020-09-18 16:01:39.495013"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 16:01:39.502255"], ["updated_at", "2020-09-18 16:01:39.502255"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test3"], ["created_at", "2020-09-18 16:01:39.506115"], ["updated_at", "2020-09-18 16:01:39.506115"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test4"], ["created_at", "2020-09-18 16:01:39.510148"], ["updated_at", "2020-09-18 16:01:39.510148"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test5"], ["created_at", "2020-09-18 16:01:39.514079"], ["updated_at", "2020-09-18 16:01:39.514079"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test6"], ["created_at", "2020-09-18 16:01:39.518293"], ["updated_at", "2020-09-18 16:01:39.518293"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test7"], ["created_at", "2020-09-18 16:01:39.522202"], ["updated_at", "2020-09-18 16:01:39.522202"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.1ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test8"], ["created_at", "2020-09-18 16:01:39.526158"], ["updated_at", "2020-09-18 16:01:39.526158"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test9"], ["created_at", "2020-09-18 16:01:39.529990"], ["updated_at", "2020-09-18 16:01:39.529990"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.2ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test10"], ["created_at", "2020-09-18 16:01:39.533681"], ["updated_at", "2020-09-18 16:01:39.533681"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTag Create (1.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test11"], ["created_at", "2020-09-18 16:01:39.537692"], ["updated_at", "2020-09-18 16:01:39.537692"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (1.8ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test1"], ["created_at", "2020-09-18 16:01:39.556316"], ["updated_at", "2020-09-18 16:01:39.556316"]]
+  [1m[35m (1.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTag Create (2.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test2"], ["created_at", "2020-09-18 16:01:39.563065"], ["updated_at", "2020-09-18 16:01:39.563065"]]
+  [1m[35m (1.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.569116"], ["updated_at", "2020-09-18 16:01:39.569116"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("amount", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["amount", 10000], ["category", 2], ["created_at", "2020-09-18 16:01:39.573840"], ["updated_at", "2020-09-18 16:01:39.573840"]]
+  [1m[35m (1.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTagging Create (3.9ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "record_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["tag_id", 127], ["record_id", 126], ["created_at", "2020-09-18 16:01:39.592633"], ["updated_at", "2020-09-18 16:01:39.592633"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTagging Create (1.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "record_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["tag_id", 127], ["record_id", 127], ["created_at", "2020-09-18 16:01:39.600489"], ["updated_at", "2020-09-18 16:01:39.600489"]]
+  [1m[35m (1.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTagging Create (1.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "record_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["tag_id", 128], ["record_id", 126], ["created_at", "2020-09-18 16:01:39.604839"], ["updated_at", "2020-09-18 16:01:39.604839"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTagging Create (1.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "record_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["tag_id", 128], ["record_id", 127], ["created_at", "2020-09-18 16:01:39.608966"], ["updated_at", "2020-09-18 16:01:39.608966"]]
+  [1m[35m (1.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "records" INNER JOIN "taggings" ON "records"."id" = "taggings"."record_id" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 127]]
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "records" INNER JOIN "taggings" ON "records"."id" = "taggings"."record_id" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 128]]
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."record_id" = $1[0m  [["record_id", 126]]
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."record_id" = $1[0m  [["record_id", 127]]
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m

@@ -19,6 +19,12 @@ zh-CN:
           attributes:
             name:
               blank: 标签名不能为空
+        tagging:
+          attributes:
+            record:
+              required: 记录不能为空
+            tag:
+              required: 标签名不能为空
         record:
           attributes:
             amount:
