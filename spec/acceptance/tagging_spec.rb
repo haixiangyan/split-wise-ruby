@@ -41,7 +41,7 @@ resource "Taggings" do
     parameter :page, '页码', type: :integer
     let(:page) { 1 }
     example "获取所有标记" do
-      # 没有访问 tagging
+      # 惰性创建，只有访问了 tagging 才会创建
       create_taggings
       sign_in
       do_request
