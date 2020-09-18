@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   resources :users
   resources :records
+  resources :tags
   resources :sessions, only: [:create]
 end
