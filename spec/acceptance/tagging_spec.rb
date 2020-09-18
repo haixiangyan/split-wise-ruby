@@ -41,6 +41,7 @@ resource "Taggings" do
     parameter :page, '页码', type: :integer
     let(:page) { 1 }
     example "获取所有标记" do
+      # 没有访问 tagging
       create_taggings
       sign_in
       do_request
