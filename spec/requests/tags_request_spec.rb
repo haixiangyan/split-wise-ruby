@@ -30,7 +30,7 @@ RSpec.describe "Tags", type: :request do
     end
     it 'should get tag list' do
       (1..11).to_a.map do |n|
-        Tag.create! name: "test#{n}"
+        create :tag, name: "test#{n}"
       end
 
       sign_in
@@ -45,7 +45,7 @@ RSpec.describe "Tags", type: :request do
 
   context 'show' do
     it 'should not get a tag before sign in' do
-      tag = Tag.create! name: 'test'
+      tag = create :tag, name: 'test'
       get "/tags/#{tag.id}"
       expect(response.status).to eq 401
     end
@@ -58,7 +58,7 @@ RSpec.describe "Tags", type: :request do
 
   context 'destroy' do
     it 'should not destroy a tag before sign in' do
-      tag = Tag.create! name: 'test'
+      tag = create :tag, name: 'test'
 
       delete "/tags/#{tag.id}"
 
@@ -66,7 +66,7 @@ RSpec.describe "Tags", type: :request do
     end
     it 'should destroy a tag' do
       sign_in
-      tag = Tag.create! name: 'test'
+      tag = create :tag, name: 'test'
 
       delete "/tags/#{tag.id}"
 
@@ -76,13 +76,13 @@ RSpec.describe "Tags", type: :request do
 
   context 'update' do
     it 'should not update a tag before sign in' do
-      tag = Tag.create! name: 'hello'
+      tag = create :tag, name: 'hello'
       patch "/tags/#{tag.id}", params: {name: 'new'}
       expect(response.status).to eq 401
     end
     it 'should update a tag' do
       sign_in
-      tag = Tag.create! name: 'hello'
+      tag = create :tag, name: 'hello'
       patch "/tags/#{tag.id}", params: {name: 'new'}
       expect(response.status).to eq 200
 

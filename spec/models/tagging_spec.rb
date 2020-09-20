@@ -20,17 +20,17 @@ RSpec.describe Tagging, type: :model do
     expect(tagging.errors[:tag][0]).to eq '标签名不能为空'
   end
   it 'has record and tag' do
-    user = User.create email: '1@qq.com', password: '123456', password_confirmation: '123456'
-    tag = Tag.create name: 'test'
-    record = Record.create amount: 10000, category: 'income', note: 'hello', user: user
+    user = create :user
+    tag = create :tag
+    record = create :record, user: user
     Tagging.create tag: tag, record: record
 
     expect(tag.records.first.id).to eq record.id
     expect(record.tags.first.id).to eq tag.id
   end
   it 'has records and tags' do
-    tag1 = Tag.create! name: 'test1'
-    tag2 = Tag.create! name: 'test2'
+    tag1 = create :tag, name: 'test1'
+    tag2 = create :tag, name: 'test2'
     record1 = Record.create amount: 10000, category: 'income', user: @user
     record2 = Record.create amount: 10000, category: 'income', user: @user
 

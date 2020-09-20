@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
 resource "Taggings" do
-  let(:tag) { Tag.create! name: 'test' }
+  let(:tag) { create :tag }
   let(:tag_id) { tag.id }
   let(:user) { User.create email: '1@qq.com', password: '123456', password_confirmation: '123456' }
   let(:record) { Record.create! amount: 10000, category: 'income', user: user }
@@ -11,7 +11,7 @@ resource "Taggings" do
   let(:id) { tagging.id }
   let(:taggings) {
     (1..11).to_a.map do |n|
-      Tagging.create! record: record, tag: Tag.create!(name: "test#{n}")
+      Tagging.create! record: record, tag: create(:tag, name: "test#{n}")
     end
   }
   let(:create_taggings) {
