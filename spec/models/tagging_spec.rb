@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Tagging, type: :model do
+  before :each do
+    @user = User.create email: '1@qq.com', password: '123456', password_confirmation: '123456'
+  end
+
   it 'require record' do
     tag = Tag.create name: 'test'
     tagging = Tagging.create tag: tag
@@ -16,8 +20,9 @@ RSpec.describe Tagging, type: :model do
     expect(tagging.errors[:tag][0]).to eq '标签名不能为空'
   end
   it 'has record and tag' do
+    user = User.create email: '1@qq.com', password: '123456', password_confirmation: '123456'
     tag = Tag.create name: 'test'
-    record = Record.create amount: 10000, category: 'income', note: 'hello'
+    record = Record.create amount: 10000, category: 'income', note: 'hello', user: user
     Tagging.create tag: tag, record: record
 
     expect(tag.records.first.id).to eq record.id
@@ -26,8 +31,8 @@ RSpec.describe Tagging, type: :model do
   it 'has records and tags' do
     tag1 = Tag.create! name: 'test1'
     tag2 = Tag.create! name: 'test2'
-    record1 = Record.create amount: 10000, category: 'income'
-    record2 = Record.create amount: 10000, category: 'income'
+    record1 = Record.create amount: 10000, category: 'income', user: @user
+    record2 = Record.create amount: 10000, category: 'income', user: @user
 
     Tagging.create tag: tag1, record: record1
     Tagging.create tag: tag1, record: record2

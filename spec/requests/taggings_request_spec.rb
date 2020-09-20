@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "Taggings", type: :request do
   before :each do
-    @record = Record.create! amount: 10000, category: 'income'
+    @user = User.create email: '1@qq.com', password: '123456', password_confirmation: '123456'
+    @record = Record.create! amount: 10000, category: 'income', user: @user
     @tag = Tag.create! name: 'test'
     @tagging = Tagging.create tag: @tag, record: @record
 

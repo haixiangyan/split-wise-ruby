@@ -31,6 +31,8 @@ zh-CN:
               blank: 金额不能为空
             category:
               blank: 类型不能为空
+            user:
+              required: 用户不能为空
         user:
           attributes:
             email:

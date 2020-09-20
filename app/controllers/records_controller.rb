@@ -16,7 +16,7 @@ class RecordsController < ApplicationController
   end
 
   def create
-    render_resource Record.create create_params
+    render_resource Record.create create_params.merge user: current_user
   end
 
   def destroy

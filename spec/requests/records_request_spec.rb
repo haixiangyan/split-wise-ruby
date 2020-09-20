@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe "Records", type: :request do
+  before :each do
+    @user = User.create email: '1@qq.com', password: '123456', password_confirmation: '123456'
+  end
+
   context 'create' do
     it 'should not create a record before login' do
       post '/records', params: {amount: 10000, category: 'outgoings', note: '请客'}
@@ -28,7 +32,7 @@ RSpec.describe "Records", type: :request do
 
   context 'destroy' do
     it 'should not destroy a record before sign in' do
-      record = Record.create! amount: 10000, category: 'income'
+      record = Record.create! amount: 10000, category: 'income', user: @user
 
       delete "/records/#{record.id}"
 
@@ -36,7 +40,7 @@ RSpec.describe "Records", type: :request do
     end
     it 'should destroy a record' do
       sign_in
-      record = Record.create! amount: 10000, category: 'income'
+      record = Record.create! amount: 10000, category: 'income', user: @user
 
       delete "/records/#{record.id}"
 
@@ -51,7 +55,7 @@ RSpec.describe "Records", type: :request do
     end
     it 'should get record list' do
       (1..11).to_a.map do
-        Record.create! amount: 10000, category: 'income'
+        Record.create! amount: 10000, category: 'income', user: @user
       end
 
       sign_in
@@ -66,7 +70,7 @@ RSpec.describe "Records", type: :request do
 
   context 'show' do
     it 'should not get a record before sign in' do
-      record = Record.create! amount: 10000, category: 'income'
+      record = Record.create! amount: 10000, category: 'income', user: @user
       get "/records/#{record.id}"
       expect(response.status).to eq 401
     end
@@ -79,13 +83,13 @@ RSpec.describe "Records", type: :request do
 
   context 'update' do
     it 'should not update a record before sign in' do
-      record = Record.create! amount: 10000, category: 'income'
+      record = Record.create! amount: 10000, category: 'income', user: @user
       patch "/records/#{record.id}", params: {amount: 999}
       expect(response.status).to eq 401
     end
     it 'should update a record' do
       sign_in
-      record = Record.create! amount: 10000, category: 'income'
+      record = Record.create! amount: 10000, category: 'income', user: @user
       patch "/records/#{record.id}", params: {amount: 999}
       expect(response.status).to eq 200
 

@@ -2,7 +2,8 @@ require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 
 resource "Records" do
-  let(:record) { Record.create! amount: 10000, category: 'income' }
+  let(:user) { User.create email: '1@qq.com', password: '123456', password_confirmation: '123456' }
+  let(:record) { Record.create! amount: 10000, category: 'income', user: user }
   let(:id) { record.id }
   let(:amount) { 10000 }
   let(:category) { 'income' }
@@ -28,13 +29,13 @@ resource "Records" do
   end
 
   get "/records" do
-    (1..11).to_a.map do
-      Record.create! amount: 10000, category: 'income'
-    end
-
     parameter :page, '页码', type: :integer
     let(:page) { 1 }
     example "获取所有记录" do
+      (1..11).to_a.map do
+        Record.create! amount: 10000, category: 'income', user: user
+      end
+
       sign_in
       do_request
       expect(status).to eq 200

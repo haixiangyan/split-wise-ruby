@@ -4,7 +4,8 @@ require 'rspec_api_documentation/dsl'
 resource "Taggings" do
   let(:tag) { Tag.create! name: 'test' }
   let(:tag_id) { tag.id }
-  let(:record) { Record.create! amount: 10000, category: 'income' }
+  let(:user) { User.create email: '1@qq.com', password: '123456', password_confirmation: '123456' }
+  let(:record) { Record.create! amount: 10000, category: 'income', user: user }
   let(:record_id) { record.id }
   let(:tagging) { Tagging.create! tag: tag, record: record }
   let(:id) { tagging.id }
