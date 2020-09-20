@@ -90,3 +90,5 @@ Temporary Items
 /config/master.key
 /postgres-data
 /.*.local
+
+/log
