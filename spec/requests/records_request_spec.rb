@@ -32,7 +32,7 @@ RSpec.describe "Records", type: :request do
 
   context 'destroy' do
     it 'should not destroy a record before sign in' do
-      record = Record.create! amount: 10000, category: 'income', user: @user
+      record = create :record
 
       delete "/records/#{record.id}"
 
@@ -40,7 +40,7 @@ RSpec.describe "Records", type: :request do
     end
     it 'should destroy a record' do
       sign_in
-      record = Record.create! amount: 10000, category: 'income', user: @user
+      record = create :record
 
       delete "/records/#{record.id}"
 
@@ -55,7 +55,7 @@ RSpec.describe "Records", type: :request do
     end
     it 'should get record list' do
       (1..11).to_a.map do
-        Record.create! amount: 10000, category: 'income', user: @user
+        create :record
       end
 
       sign_in
@@ -70,7 +70,7 @@ RSpec.describe "Records", type: :request do
 
   context 'show' do
     it 'should not get a record before sign in' do
-      record = Record.create! amount: 10000, category: 'income', user: @user
+      record = create :record
       get "/records/#{record.id}"
       expect(response.status).to eq 401
     end
@@ -83,13 +83,13 @@ RSpec.describe "Records", type: :request do
 
   context 'update' do
     it 'should not update a record before sign in' do
-      record = Record.create! amount: 10000, category: 'income', user: @user
+      record = create :record
       patch "/records/#{record.id}", params: {amount: 999}
       expect(response.status).to eq 401
     end
     it 'should update a record' do
       sign_in
-      record = Record.create! amount: 10000, category: 'income', user: @user
+      record = create :record
       patch "/records/#{record.id}", params: {amount: 999}
       expect(response.status).to eq 200
 

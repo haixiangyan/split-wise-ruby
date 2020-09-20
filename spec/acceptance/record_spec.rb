@@ -3,7 +3,7 @@ require 'rspec_api_documentation/dsl'
 
 resource "Records" do
   let(:user) { create(:user) }
-  let(:record) { Record.create! amount: 10000, category: 'income', user: user }
+  let(:record) { create :record, user: user }
   let(:id) { record.id }
   let(:amount) { 10000 }
   let(:category) { 'income' }
@@ -33,7 +33,7 @@ resource "Records" do
     let(:page) { 1 }
     example "获取所有记录" do
       (1..11).to_a.map do
-        Record.create! amount: 10000, category: 'income', user: user
+        create :record
       end
 
       sign_in
