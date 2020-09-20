@@ -4,7 +4,7 @@ require 'api_documentation_helper'
 
 module SpecTestHelper
   def sign_in(user = nil)
-    user ||= User.create!(email: 'spec_test_helper@qq.com', password: '123456', password_confirmation: '123456')
+    user ||= create(:user, email: 'spec_test_helper@qq.com')
     post '/sessions', params: {email: user.email, password: user.password}
     user
   end
