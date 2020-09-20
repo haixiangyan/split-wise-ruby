@@ -7,11 +7,11 @@ resource "Taggings" do
   let(:user) { User.create email: '1@qq.com', password: '123456', password_confirmation: '123456' }
   let(:record) { Record.create! amount: 10000, category: 'income', user: user }
   let(:record_id) { record.id }
-  let(:tagging) { Tagging.create! tag: tag, record: record }
+  let(:tagging) { create :tagging, tag: tag, record: record }
   let(:id) { tagging.id }
   let(:taggings) {
     (1..11).to_a.map do |n|
-      Tagging.create! record: record, tag: create(:tag, name: "test#{n}")
+      create(:tagging, record: record, tag: create(:tag, name: "test#{n}"))
     end
   }
   let(:create_taggings) {
